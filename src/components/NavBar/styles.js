@@ -30,6 +30,7 @@ export const IconLink = styled.a`
     padding:30%;
     transition: all .2s ease-in-out;
     cursor: pointer;
+    margin:20%;
 
     &:hover{
         transform: scale(1.1);
@@ -40,6 +41,8 @@ export const NavIcon = styled(LinkIcon)`
     color: white;
     text-decoration: none;
     text-transform:uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.8rem;
 `;
 
 export const Icon = styled.div`
@@ -76,16 +79,13 @@ export const RoutesContainer = styled.div`
     flex-direction:column;
     align-items:center;
     margin:30%;
-
-
-
 `;
 
 export const AnchorsContainer = styled.div`
     display: flex;
     flex-direction:column;
     align-items:center;
-     margin:30%;
+    margin:30%;
 `;
 
 

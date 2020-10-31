@@ -5,7 +5,7 @@ import {VscHome} from 'react-icons/vsc';
 import {BsPerson, BsCodeSlash} from 'react-icons/bs';
 import {AiOutlineTool} from 'react-icons/ai'
 import {NavBarContainer,IconLink, NavIcon, OverLay, RoutesContainer, AnchorsContainer, Container, Icon} from './styles';
-import { Route } from 'react-router-dom';
+import NamePlate from '../NamePlate';
 
 const NavBar = () => {
     return (
@@ -17,7 +17,7 @@ const NavBar = () => {
                         <VscHome/>
                     </Icon>
                         <OverLay>
-                            <NavIcon to="/home">
+                            <NavIcon to="/">
                             Home
                             </NavIcon>
                         </OverLay>

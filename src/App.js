@@ -1,25 +1,27 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom'
-import NavBar from './NavBar';
-import {createGlobalStyle} from 'styled-components'
+import {createGlobalStyle} from 'styled-components';
+import NavBar from './components/NavBar';
+import Routes from './routes';
 
 const GlobalStyle = createGlobalStyle`
   html, body{
     width:100vw;
     height:100vh;
-    position:fixed;
     user-select:none;
     box-sizing:border-box;
     margin:0;
+    position:fixed;
   }
 `;
 
 function App() {
   return (
-    <BrowserRouter>
-    <GlobalStyle/>
-      <NavBar></NavBar>
-    </BrowserRouter>
+   <div>
+     <GlobalStyle/>
+     <NavBar/>
+     <Routes/>
+   </div>
+
   );
 }
 
