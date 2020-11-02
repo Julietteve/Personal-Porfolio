@@ -20,7 +20,7 @@ export const NavBarContainer = styled.aside`
     flex-direction: column;
     justify-content:space-evenly;
     align-items:center;
-    background-color:red;
+    background-color:black;
 `;
 
 export const IconLink = styled.a`

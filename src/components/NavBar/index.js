@@ -5,7 +5,6 @@ import {VscHome} from 'react-icons/vsc';
 import {BsPerson, BsCodeSlash} from 'react-icons/bs';
 import {AiOutlineTool} from 'react-icons/ai'
 import {NavBarContainer,IconLink, NavIcon, OverLay, RoutesContainer, AnchorsContainer, Container, Icon} from './styles';
-import NamePlate from '../NamePlate';
 
 const NavBar = () => {
     return (
@@ -55,8 +54,7 @@ const NavBar = () => {
             </RoutesContainer>
             <AnchorsContainer>
                 <IconLink 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                   
                     href="https://www.linkedin.com/in/julieta-eva-garcia/">
                     <FaLinkedinIn/>
                 </IconLink>

@@ -1,13 +1,15 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
-import {NavBar,NamePlate} from '../../components/index';
-import Routes from '../../routes';
+import {NavBar} from '../../components/index';
+import {MainContainer, Section } from './styles';
 
-const Main = () => {
+const Main = ({section}) => {
     return (
-        <div>
-            <NavBar/>
-        </div>
+       <MainContainer>
+           <NavBar></NavBar>
+           <Section>
+                {section}
+           </Section>
+       </MainContainer>
     );
 };
 
