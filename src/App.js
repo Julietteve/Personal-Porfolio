@@ -10,20 +10,10 @@ const GlobalStyle = createGlobalStyle`
     user-select:none;
     box-sizing:border-box;
     margin:0;
-    position:fixed;
   }
 `;
 
 function App() {
-
-  // const [isLoaded, setLoading] = useState(false);
-
-  //   useEffect(()=>{
-  //       setTimeout(() => {
-  //           setLoading(true)
-  //       }, 3000);
-  //   },[])
-
   return (
    <div>
      <GlobalStyle/>

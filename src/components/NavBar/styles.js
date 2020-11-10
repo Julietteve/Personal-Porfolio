@@ -14,19 +14,20 @@ export const OverLay = styled.div`
 `;
 
 export const NavBarContainer = styled.aside`
-    width:5%;
+    width:7%;
     height:100vh;
     display:flex;
     flex-direction: column;
     justify-content:space-evenly;
     align-items:center;
-    background-color:black;
+    background-color: black;
+    border-right: 0.5px solid #262626;
 `;
 
 export const IconLink = styled.a`
     display:block;
     color:white;
-    font-size:1.2rem;
+    font-size:1rem;
     padding:30%;
     transition: all .2s ease-in-out;
     cursor: pointer;
@@ -38,7 +39,7 @@ export const IconLink = styled.a`
 `;
 
 export const NavIcon = styled(LinkIcon)`
-    color: white;
+    color:white;
     text-decoration: none;
     text-transform:uppercase;
     font-family: 'Josefin Sans', sans-serif;
@@ -48,7 +49,7 @@ export const NavIcon = styled(LinkIcon)`
 export const Icon = styled.div`
     color: white;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.8em;
     opacity: 1;
     height: auto;
     transition: .7s ease;
@@ -87,6 +88,7 @@ export const AnchorsContainer = styled.div`
     align-items:center;
     margin:30%;
 `;
+ 
 
 
 

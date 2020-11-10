@@ -1,9 +1,17 @@
 import React from 'react';
-import {Container, Text, Span} from './styles'
+import {SkillCard} from '../../components'
+import {Container, SkillsContainer, Skill} from './styles'
 
 const Skills = () => {
+
     return (
-      <p>sills</p>
+      <Container>
+               <SkillsContainer>    
+                 <SkillCard/>
+                 <SkillCard/>
+                 <SkillCard/>
+               </SkillsContainer>
+        </Container>
     );
 };
 

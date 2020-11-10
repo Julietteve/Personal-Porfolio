@@ -1,6 +1,5 @@
 import styled from 'styled-components/macro';
 
-
 export const OverLayer = styled.div`
   transition: .5s ease;
   opacity: 0;

@@ -1,6 +1,6 @@
 import React from 'react';
 import {FaLinkedinIn, FaGithub} from 'react-icons/fa';
-import{FiMail, FiPhone} from 'react-icons/fi';
+import{FiMail, FiPhone, FiCodesandbox} from 'react-icons/fi';
 import {VscHome} from 'react-icons/vsc';
 import {BsPerson, BsCodeSlash} from 'react-icons/bs';
 import {AiOutlineTool} from 'react-icons/ai'
@@ -63,6 +63,11 @@ const NavBar = () => {
                     rel="noopener noreferrer" 
                     href="https://github.com/Julietteve">
                     <FaGithub/>
+                </IconLink>
+                <IconLink
+                    rel="noopener noreferrer" 
+                    href="tel:+54 9 11 7365-7252">
+                    <FiCodesandbox/>
                 </IconLink>
                 <IconLink
                     target="_blank" 
