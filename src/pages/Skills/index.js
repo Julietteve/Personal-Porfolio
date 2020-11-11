@@ -1,5 +1,6 @@
 import React from 'react';
-import {SkillCard} from '../../components'
+import {SkillCard} from '../../components';
+import {skills} from './data';
 import {Container, SkillsContainer, Skill} from './styles'
 
 const Skills = () => {
@@ -7,9 +8,16 @@ const Skills = () => {
     return (
       <Container>
                <SkillsContainer>    
-                 <SkillCard/>
-                 <SkillCard/>
-                 <SkillCard/>
+                 {
+                   skills.map((item, index)=>(
+                     <SkillCard
+                      key={index}
+                      skill={item.kind}
+                      animal={item.image}
+                      quote={`"${item.quote}"`}
+                     />
+                   ))
+                 }
                </SkillsContainer>
         </Container>
     );

@@ -10,6 +10,8 @@ const GlobalStyle = createGlobalStyle`
     user-select:none;
     box-sizing:border-box;
     margin:0;
+    position:fixed;
+    font-family: "rz-regular","maison-neue-mono",Helvetica,Arial,sans-serif;
   }
 `;
 

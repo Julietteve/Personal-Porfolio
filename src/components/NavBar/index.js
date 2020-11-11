@@ -4,7 +4,7 @@ import{FiMail, FiPhone, FiCodesandbox} from 'react-icons/fi';
 import {VscHome} from 'react-icons/vsc';
 import {BsPerson, BsCodeSlash} from 'react-icons/bs';
 import {AiOutlineTool} from 'react-icons/ai'
-import {NavBarContainer,IconLink, NavIcon, OverLay, RoutesContainer, AnchorsContainer, Container, Icon} from './styles';
+import {NavBarContainer,IconLink, NavIcon, OverLay, RoutesContainer, AnchorsContainer, Container, Icon, Name} from './styles';
 
 const NavBar = () => {
     return (
@@ -52,6 +52,9 @@ const NavBar = () => {
                         </OverLay>
                 </Container>
             </RoutesContainer>
+            <Name>
+                    JG
+            </Name>
             <AnchorsContainer>
                 <IconLink 
                    

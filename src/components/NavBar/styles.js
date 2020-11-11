@@ -14,7 +14,7 @@ export const OverLay = styled.div`
 `;
 
 export const NavBarContainer = styled.aside`
-    width:7%;
+    width:8%;
     height:100vh;
     display:flex;
     flex-direction: column;
@@ -39,22 +39,20 @@ export const IconLink = styled.a`
 `;
 
 export const NavIcon = styled(LinkIcon)`
-    color:white;
+    color: ivory;
     text-decoration: none;
     text-transform:uppercase;
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 0.8rem;
 `;
 
 export const Icon = styled.div`
-    color: white;
+    color: ivory;
     text-decoration: none;
     font-size: 1.8em;
     opacity: 1;
     height: auto;
     transition: .7s ease;
     backface-visibility: hidden;
-
 `;
 
 export const Container = styled.div`
@@ -87,6 +85,17 @@ export const AnchorsContainer = styled.div`
     flex-direction:column;
     align-items:center;
     margin:30%;
+`;
+
+export const Name = styled.div`
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    margin:30%;
+    width:100%;
+    text-transform:uppercase;
+    font-size : 1.2rem;
+    color:ivory;
 `;
  
 

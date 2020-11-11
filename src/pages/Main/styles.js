@@ -7,6 +7,6 @@ export const MainContainer = styled.div`
 `;
 
 export const Section = styled.div`
-    width:93%;
+    width:92%;
     height:100vh;
 `;
