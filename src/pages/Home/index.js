@@ -1,14 +1,13 @@
 import React from 'react';
-import {Container} from './styles'
-import {Loader} from '../../components'
+import {Container, Left, Right, Name,} from './styles'
 
 const Home = () => {    
 
     return (
         <Container>
-           
-               <div>jeuli</div>
-                
+            <Left></Left>
+            <Right></Right>
+             
         </Container>
 
 

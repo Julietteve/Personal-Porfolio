@@ -20,18 +20,19 @@ export const NavBarContainer = styled.aside`
     flex-direction: column;
     justify-content:space-evenly;
     align-items:center;
-    background-color: black;
-    border-right: 0.5px solid #262626;
+    border-right: 0.5px solid #D1D1D1;
+    background-color: ${props => props.background};
+    color:${props => props.color};
 `;
 
 export const IconLink = styled.a`
     display:block;
-    color:white;
     font-size:1rem;
     padding:30%;
     transition: all .2s ease-in-out;
     cursor: pointer;
     margin:20%;
+    color:${props => props.color};
 
     &:hover{
         transform: scale(1.1);
@@ -39,20 +40,20 @@ export const IconLink = styled.a`
 `;
 
 export const NavIcon = styled(LinkIcon)`
-    color: ivory;
+    color: ${(props) => props.color };
     text-decoration: none;
     text-transform:uppercase;
     font-size: 0.8rem;
 `;
 
 export const Icon = styled.div`
-    color: ivory;
     text-decoration: none;
     font-size: 1.8em;
     opacity: 1;
     height: auto;
     transition: .7s ease;
     backface-visibility: hidden;
+    color:${props => props.color};
 `;
 
 export const Container = styled.div`
@@ -63,6 +64,7 @@ export const Container = styled.div`
       width:100%;
       transition: all .2s ease-in-out;
       padding:30%;
+      color:${props => props.color};
 
     &:hover ${OverLay} {
     opacity: 1;
@@ -95,7 +97,7 @@ export const Name = styled.div`
     width:100%;
     text-transform:uppercase;
     font-size : 1.2rem;
-    color:ivory;
+    color:${props => props.color};
 `;
  
 

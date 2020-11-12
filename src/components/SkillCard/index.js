@@ -1,19 +1,16 @@
 import React from 'react';
-import {FlipCard, FlipCardInner, FlipCardBack,FlipCardFront, Skill, Animal, Quote} from './styles';
+import {FlipCard, FlipCardInner, FlipCardBack,FlipCardFront, Animal,Kind, Description} from './styles';
 
-const SkillCard = ({skill,animal,quote}) => {
+const SkillCard = ({image, kind,description}) => {
     return (
         <FlipCard>
   <FlipCardInner>
     <FlipCardFront>
-    <Skill>{skill}</Skill>
-    <Animal src={animal}></Animal>
-    <Quote>{quote}</Quote>
+    <Animal src={image}></Animal>
     </FlipCardFront>
     <FlipCardBack>
-      <h1>John Doe</h1> 
-      <p>Architect Engineer</p> 
-      <p>We love that guy</p>
+    <Kind>{kind}</Kind>
+    <Description>{description}</Description>
     </FlipCardBack>
   </FlipCardInner>
     </FlipCard>

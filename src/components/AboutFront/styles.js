@@ -15,6 +15,7 @@ export const Quote = styled.h2`
     margin:5%;
     text-align:right;
     animation: ${fadeIn} 5s ease;
+    letter-spacing:0.2rem;
 `;
 export const Info = styled.div`
     color:ivory;
@@ -34,6 +35,7 @@ export const ChangeButton = styled.button`
     padding:2%;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing:0.6rem;
     cursor: pointer;
 
     :focus:hover{

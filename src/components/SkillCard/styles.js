@@ -12,9 +12,8 @@ export const FlipCardInner = styled.div`
 export const FlipCard = styled.div`
     background-color: transparent;
     perspective: 1000px;
-    width: 30%;
-    height: 80vh;
-    margin:1%;
+    width: 50%;
+    height: 100vh;
   
 
     &:hover ${FlipCardInner}{
@@ -23,7 +22,6 @@ export const FlipCard = styled.div`
 `;
 
 export const FlipCardFront = styled.div`
-    background-color:#E4E3E1;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -36,8 +34,7 @@ export const FlipCardFront = styled.div`
 
 
 export const FlipCardBack = styled.div`
-    background-color: black;
-    color: white;
+    background-color: ivory;
     transform: rotateY(180deg);
     position: absolute;
     width: 100%;
@@ -46,24 +43,41 @@ export const FlipCardBack = styled.div`
     backface-visibility: hidden;
 `;
 
-export const Skill = styled.h1`
-    font-family: 'Merriweather', serif;
-    font-size:3rem;
-`;
+
 export const Animal = styled.img`
-    width:70%;
+    width:100%;
+    height:100%;
     margin:0 auto;
-    padding:5%;
+    padding:0;
+    margin:0;
+    position:absolute;
     
 `;
-export const Quote = styled.p`
-position:absolute;
-bottom:5%;
-    font-family: 'Roboto', sans-serif;
-    padding:4%;
-    font-size:0.9em;
-    color:#898988;
+
+export const Description = styled.div`
+    width:35%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    opacity:0;
 `;
+
+export const Kind = styled.h1`
+color:black;
+text-transform: uppercase;
+font-size:15rem;
+word-break:break-word;
+line-height:0.9; 
+&:hover ${Description}{
+    opacity:1;
+}
+
+
+`;
+
 
  
 
