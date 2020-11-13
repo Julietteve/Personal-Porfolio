@@ -21,7 +21,7 @@ function App() {
      <GlobalStyle/>
      <Switch>
       <Route exact path="/"><Main section={<Home/>}/></Route>
-      <Route path="/me"><Main section={<About/>}/></Route>
+      <Route path="/about"><Main section={<About/>}/></Route>
       <Route path="/skills"><Main section={<Skills/>}/></Route>
       <Route path="/works"><Main section={<Works/>}/></Route>
      </Switch>

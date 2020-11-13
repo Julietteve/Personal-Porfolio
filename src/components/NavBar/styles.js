@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import {Link as LinkIcon} from 'react-router-dom';
+import {NavLink as LinkIcon} from 'react-router-dom';
 
 export const OverLay = styled.div`
     transition: .5s ease;
@@ -20,7 +20,7 @@ export const NavBarContainer = styled.aside`
     flex-direction: column;
     justify-content:space-evenly;
     align-items:center;
-    border-right: 0.5px solid #D1D1D1;
+    border-right: 0.5px solid ${props => props.border};
     background-color: ${props => props.background};
     color:${props => props.color};
 `;
@@ -43,7 +43,13 @@ export const NavIcon = styled(LinkIcon)`
     color: ${(props) => props.color };
     text-decoration: none;
     text-transform:uppercase;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    margin:10%;
+    letter-spacing:0.2rem;
+    transform: rotate(-90deg);
+    &.active {
+        transform: rotate(0deg);
+    }
 `;
 
 export const Icon = styled.div`
@@ -54,25 +60,23 @@ export const Icon = styled.div`
     transition: .7s ease;
     backface-visibility: hidden;
     color:${props => props.color};
+    margin:40%;
 `;
 
 export const Container = styled.div`
       display:flex;
+      flex-direction:column;
       justify-content:center;
       align-items:center;
       position: relative;
       width:100%;
       transition: all .2s ease-in-out;
-      padding:30%;
+      padding:60%;
       color:${props => props.color};
-
-    &:hover ${OverLay} {
-    opacity: 1;
+    &:hover {
+        transform: scale(1.1);
     }
-
-    &:hover ${Icon} {
-    opacity: 0;
-}
+    
 `;
 
 export const RoutesContainer = styled.div`
