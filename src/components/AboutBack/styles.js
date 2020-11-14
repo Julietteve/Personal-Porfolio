@@ -8,9 +8,9 @@ export const Container = styled.div`
     background-size: cover;
 `;
 
-export const About = styled.div`
+export const About = styled.h1`
     margin:6%;
-    font-size: 16rem;
+    font-size: 15rem;
     word-wrap:break-word;
     line-height:0.8;
     color: ivory;

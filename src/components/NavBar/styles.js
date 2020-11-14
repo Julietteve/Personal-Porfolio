@@ -47,6 +47,7 @@ export const NavIcon = styled(LinkIcon)`
     margin:10%;
     letter-spacing:0.2rem;
     transform: rotate(-90deg);
+    transition: all .2s ease-in-out;
     &.active {
         transform: rotate(0deg);
     }

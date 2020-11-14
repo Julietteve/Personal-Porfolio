@@ -1,86 +1,113 @@
 import styled from 'styled-components/macro';
 
-export const OverLayer = styled.div`
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-`;
-
-export const Cover = styled.img`
-    width:100%;
-    height:auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    opacity:1;
-    display:block;
-
-    &:before{
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    }
-`;
-
 export const ContainerWork = styled.div`
     display: flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:space-around;
 `;
 
-export const Card = styled.div`
-    font-family: 'Josefin Sans', sans-serif;
-    position: relative;
+export const Filter = styled.div`
+    width:40vw;
+    height:100vh;
+    background-color:black;
     display:flex;
     flex-direction:column;
+    justify-content:center;
     align-items:center;
-    width: calc(100%/4);
-    height:50vh;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-	cursor: pointer;
-   
-   &:hover{
-       display:block;
-   }
-    &:hover ${OverLayer}{
+`;
+
+export const CardContainer = styled.div`
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    width:60vw;
+    height:100vh;
+    background-color:black;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    &::-webkit-scrollbar {
+    display: none; 
+ 
+}
+`;
+
+export const Work = styled.h1`
+    width:100%;
+    text-transform:uppercase;
+    color:ivory;
+    font-size:6rem;
+    word-wrap:break-word;
+    line-height:1;
+    text-align:center;
+    margin:0;
+`;
+
+export const Button = styled.button`
+    color:ivory;
+    background-color:transparent;
+    border: none;
+    margin:2%;
+    text-transform: uppercase;
+
+    :hover{
+        background-color:ivory;
+        color:black;
+    }
+
+    :focus{
+        text-decoration:line-through;
+        border: none;
+        outline:none;
+    }
+`;
+
+export const ToolContainer = styled.div`
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    margin:10%;
+`;
+
+export const Img = styled.img`
+    width:60%;
+    filter: grayscale(90%);
+`;
+
+export const Meme = styled.div`
+  margin-top:5%;  
+  opacity:0;
+  transition: all .2s ease-in-out;
+`;
+
+export const Choose = styled.div`
+    color:ivory;
+    font-size:0.9rem;
+    text-align:center;
+    margin:10%;
+    
+    :hover ${Meme}{
         opacity:1;
     }
-    &:hover ${Cover}{
-    opacity:0.2;
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-    }
 `;
 
-export const ProjectName = styled.h3`
-
-`;
-export const SeeCode = styled.a`
-    text-decoration:none;
-   
-`;
-
-export const Tool = styled.div`
-    font-size:0.9rem;
+export const Wrap = styled.div`
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   width:80%;
+   margin:5%;
 `;
 
-export const CodeBox = styled.div`
-    margin-top:15%;
-    padding:2%;
 
-`;
+
+
+
+
+
+
+
+
+
+
+
+
+
 

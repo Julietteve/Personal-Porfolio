@@ -51,7 +51,7 @@ export const Circle = styled.img`
 `;
 
 
-export const Me = styled(LinkIcon)`
+export const Me = styled.a`
     font-size:1em;
     background-color:black;
     color:ivory;
@@ -60,10 +60,12 @@ export const Me = styled(LinkIcon)`
     padding:2%;
     letter-spacing:0.2rem;
     border: 1px solid black;
-    width:25%;
+    width:30%;
     text-align:center;
     margin:5%;
     margin-left:0;
+    text-decoration:none;
+    cursor: pointer;
 
     &:hover{
     background-color:ivory;
