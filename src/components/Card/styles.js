@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import {fadeIn} from '../../animations'
 
 export const OverLayer = styled.div`
   transition: .5s ease;
@@ -32,6 +33,7 @@ export const CardHolder = styled.div`
 	cursor: pointer;
     color:white;
     margin:0;
+    animation: ${fadeIn} ease-in-out 0.4s;
   
     &:hover ${OverLayer}{
         opacity:1;

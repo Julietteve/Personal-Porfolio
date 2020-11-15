@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import {fadeInRigth, fadeIn} from '../../animations'
 
 export const ContainerWork = styled.div`
     display: flex;
@@ -24,8 +25,7 @@ export const CardContainer = styled.div`
     overflow-y:scroll;
     overflow-x:hidden;
     &::-webkit-scrollbar {
-    display: none; 
- 
+    display: none;  
 }
 `;
 
@@ -38,6 +38,7 @@ export const Work = styled.h1`
     line-height:1;
     text-align:center;
     margin:0;
+    animation: ${fadeInRigth} ease 0.4s forwards;
 `;
 
 export const Button = styled.button`
@@ -64,6 +65,7 @@ export const ToolContainer = styled.div`
     flex-wrap:wrap;
     justify-content:space-evenly;
     margin:10%;
+    animation: ${fadeInRigth} ease 0.4s forwards;
 `;
 
 export const Img = styled.img`
@@ -82,6 +84,7 @@ export const Choose = styled.div`
     font-size:0.9rem;
     text-align:center;
     margin:10%;
+    animation: ${fadeInRigth} ease 0.4s forwards;
     
     :hover ${Meme}{
         opacity:1;

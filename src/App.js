@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import {createGlobalStyle} from 'styled-components';
+import {Error404} from './components';
 import {Home, About, Skills, Works, Main} from './pages/index'
 
 const GlobalStyle = createGlobalStyle`
@@ -24,6 +25,7 @@ function App() {
       <Route path="/about"><Main section={<About/>}/></Route>
       <Route path="/skills"><Main section={<Skills/>}/></Route>
       <Route path="/works"><Main section={<Works/>}/></Route>
+      <Route component={Error404}></Route>
      </Switch>
    </div>
 

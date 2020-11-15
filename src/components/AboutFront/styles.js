@@ -23,7 +23,7 @@ export const Info = styled.div`
     padding:2%;
     line-height: 1.5;
     text-align:justify;
-    animation: ${fadeIn} 10s ease;
+   
 
 `;
 
@@ -52,5 +52,4 @@ export const Button = styled.div`
     justify-content: flex-end;
     margin: 10%;
     margin-right:5%;
-    animation: ${fadeIn} 5s ease;
 `;

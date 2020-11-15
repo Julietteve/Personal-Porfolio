@@ -10,7 +10,7 @@ const Main = ({section}) => {
     useEffect(()=>{
         setTimeout(() => {
             setLoading(true)
-        }, 3000);
+        }, 2000);
 
     },[])
 

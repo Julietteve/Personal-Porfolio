@@ -1,6 +1,6 @@
 import React from 'react';
-import {Container, Info, Artemisa, Slogan, Box, Me, Scroll, Circle} from './styles'
-import whales from "../../whales.jpg"
+import {Container, Info, Artemisa, Slogan, Box, Me, Scroll, Circle} from './styles';
+import whales from "../../whales.jpg";
 
 const Home = () => {    
 
@@ -9,7 +9,7 @@ const Home = () => {
             <Box>
                 <Slogan>Because the outside also matters</Slogan>
                 <Scroll>
-                    <Info> My name is Julie, passionate dev and designer My name is Julie, passionate dev and designer My name is Julie, passionate dev and designer </Info>
+                    <Info> My name is Julie, passionate frontend dev and designer My name is Julie, passionate frontend dev and designer My name is Julie, passionate frontend dev and designer </Info>
                 </Scroll>
                 <Me 
                 target="_blank" 

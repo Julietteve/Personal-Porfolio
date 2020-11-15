@@ -1,6 +1,5 @@
 import styled from 'styled-components/macro';
-import {Link as LinkIcon} from 'react-router-dom';
-import{scroll} from '../../animations';
+import{scroll, fadeInRigth} from '../../animations';
 
 
 export const Container = styled.div`
@@ -19,11 +18,10 @@ export const Slogan = styled.h1`
   line-height:1;
   margin-bottom:20px;
   position:relative;
-  transition: 2s ease-in-out;
   z-index:1;
-  :hover{
-    color:lightgray;
-  }
+  opacity: 0;
+  animation: ${fadeInRigth} ease 0.4s forwards;
+  animation-delay: 0.4s;
 `;
 
 export const Info = styled.div`
@@ -48,6 +46,7 @@ export const Circle = styled.img`
   top:10%;
   left: 60%;
   width:25%;
+  animation: ${fadeInRigth} ease 0.4s forwards;
 `;
 
 
@@ -66,7 +65,8 @@ export const Me = styled.a`
     margin-left:0;
     text-decoration:none;
     cursor: pointer;
-
+    animation: ${fadeInRigth} ease 0.4s forwards;
+    animation-delay: 0.4s;
     &:hover{
     background-color:ivory;
     color:black;
@@ -86,6 +86,7 @@ export const Artemisa = styled.img`
   position:relative;
   z-index:1;
   margin-top:10%;
+  animation: ${fadeInRigth} ease 0.4s forwards;
 `;
 
 
