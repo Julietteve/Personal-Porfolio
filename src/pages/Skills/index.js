@@ -1,13 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {SkillCard} from '../../components';
 import {skills} from './data';
-import {Container, SkillsContainer,DownloadContainer, Skill, Description} from './styles'
+import {Container, SkillsContainer,DownloadContainer, Skill} from './styles'
 
 const Skills = () => {
 
     return (
       <Container>
-              <DownloadContainer>Hover on skill</DownloadContainer>
+              <DownloadContainer>Hover on skill →</DownloadContainer>
                <SkillsContainer>  
                  <Skill>
                  {
@@ -17,6 +17,8 @@ const Skills = () => {
                       image={item.image}
                       kind={item.kind}
                       description={item.description}
+                      skill={item.skill}
+                      tools={item.tools}
                      />
                    ))
                  }

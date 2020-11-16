@@ -32,7 +32,7 @@ export const Home = styled(LinkHome)`
     position:relative;
     z-index:1;
     color:ivory;
-
+    letter-spacing:0.4rem;
     transition: all .2s ease-in-out;
 
     &:hover {
@@ -60,13 +60,3 @@ export const Box = styled.div`
     color:ivory;
     
 `;
-
-export const Corner = styled.div`
-    position:absolute;
-    right:0;
-    top:0;
-    width:50%;
-    height:50%;
-    background-color:black;
-`;
-

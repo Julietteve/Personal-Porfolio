@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container, Info, Artemisa, Slogan, Box, Me, Scroll, Circle} from './styles';
+import {intro} from './data';
 import whales from "../../whales.jpg";
 
 const Home = () => {    
@@ -9,12 +10,14 @@ const Home = () => {
             <Box>
                 <Slogan>Because the outside also matters</Slogan>
                 <Scroll>
-                    <Info> My name is Julie, passionate frontend dev and designer My name is Julie, passionate frontend dev and designer My name is Julie, passionate frontend dev and designer </Info>
+                    <Info>{intro}</Info>
                 </Scroll>
                 <Me 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                href={whales}>
+                href={whales}
+                download
+                >
                 Download CV
                 </Me>
             </Box>

@@ -29,7 +29,6 @@ export const FlipCardFront = styled.div`
     backface-visibility: hidden;
     display:flex;
     flex-direction: column;
-    align-items:center;
 `;
 
 
@@ -51,32 +50,56 @@ export const Animal = styled.img`
     padding:0;
     margin:0;
     position:absolute;
-    
 `;
 
 export const Description = styled.div`
-    width:35%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:black;
-    text-transform: uppercase;
-    letter-spacing: 0.6rem;
-    opacity:0;
+    text-align: justify;
+    line-height:1.5;
+    font-size:0.9rem;
 `;
 
 export const Kind = styled.h1`
-color:black;
 text-transform: uppercase;
-font-size:15rem;
+font-size:5rem;
 word-break:break-word;
 line-height:0.9; 
-&:hover ${Description}{
-    opacity:1;
-}
-
-
 `;
+
+export const Wrapper = styled.div`
+display: flex;
+flex-wrap: wrap;
+align-items:center;
+justify-content:space-between;
+width:90%;
+`;
+
+export const Skill = styled.div`
+text-transform: uppercase;
+margin:2%;
+color:#262626;
+font-size:0.9rem;
+transition: all .2s ease-in-out;
+:hover{
+    transform: scale(1.1);
+}
+`;
+
+export const Inner = styled.div`
+padding:10%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+`;
+
+export const Key = styled.div`
+ text-transform:uppercase;
+ font-size:1.2rem;
+ letter-spacing: 0.2rem;
+padding:8%;
+`;
+
+
 
 
  

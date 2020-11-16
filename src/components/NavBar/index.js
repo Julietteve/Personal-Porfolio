@@ -36,6 +36,8 @@ const NavBar = () => {
             <AnchorsContainer>
                 <IconLink 
                     color= {backgroundColor==="ivory" ? "#101010" : "ivory"}
+                    target="_blank" 
+                    rel="noopener noreferrer" 
                     href="https://www.linkedin.com/in/julieta-eva-garcia/">
                     <FaLinkedinIn/>
                 </IconLink>

@@ -1,8 +1,10 @@
 import styled from 'styled-components/macro';
+import {fadeInRigth} from '../../animations'
 
 export const Container = styled.div`
     display:flex;
     width:100%;
+   
 `;
 
 export const DownloadContainer = styled.div`
@@ -29,6 +31,7 @@ export const SkillsContainer = styled.div`
     justify-content:center;
     align-items:center;
     height:100vh;
+    animation: ${fadeInRigth} ease 0.4s forwards;
 `;
 
 

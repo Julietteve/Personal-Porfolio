@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import {fadeInRigth, fadeIn} from '../../animations'
+import {fadeInRigth} from '../../animations'
 
 export const ContainerWork = styled.div`
     display: flex;

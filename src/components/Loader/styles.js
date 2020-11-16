@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import {zoomOut, growLeft,fadeOut} from '../../animations';
+import {zoomOut, growLeft,fadeOut,expand} from '../../animations';
 
 export const Container = styled.div`
     width: 100vw;
@@ -10,6 +10,8 @@ export const Container = styled.div`
     align-items: center;
     background-color:black;
     animation-timing-function: linear;
+    animation: ${expand} cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s backwards;
+    animation-delay: 0.10s;
 `;
 
 export const Line = styled.div`

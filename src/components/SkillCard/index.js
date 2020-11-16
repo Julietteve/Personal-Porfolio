@@ -1,7 +1,7 @@
 import React from 'react';
-import {FlipCard, FlipCardInner, FlipCardBack,FlipCardFront, Animal,Kind, Description} from './styles';
+import {Key, FlipCard, FlipCardInner, FlipCardBack,FlipCardFront, Animal,Kind, Description, Skill, Wrapper, Inner} from './styles';
 
-const SkillCard = ({image, kind,description}) => {
+const SkillCard = ({image, kind,description, skill, tools}) => {
     return (
         <FlipCard>
   <FlipCardInner>
@@ -9,8 +9,15 @@ const SkillCard = ({image, kind,description}) => {
     <Animal src={image}></Animal>
     </FlipCardFront>
     <FlipCardBack>
-    <Kind>{kind}</Kind>
-    <Description>{description}</Description>
+      <Inner>
+        <Kind>{kind}</Kind>
+        <Description>{description}</Description>
+        <Key>Keywords</Key>
+        <Wrapper>
+        {skill.map((item, index)=>(<Skill key={index}>{item}</Skill>))}
+        {tools.map((item, index)=>(<Skill key={index}>{item}</Skill>))}
+        </Wrapper>
+      </Inner>
     </FlipCardBack>
   </FlipCardInner>
     </FlipCard>

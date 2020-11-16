@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, NotFound,Home, Glitch, Warn, Box, Corner} from './styles'
+import {Container, NotFound,Home, Glitch, Warn, Box} from './styles'
 
 const Error404 = () => {
     return (

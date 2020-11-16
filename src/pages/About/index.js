@@ -1,24 +1,25 @@
 import React, {useState} from 'react';
 import {quotes} from './data';
 import {AboutBack,AboutFront} from '../../components'
-import Split from 'react-split'
-import {} from './styles';
+import Split from 'react-split';
 import './stylesheet.css';
 
 const About = () => {
-
-    const [quote, setQuote]=useState( "Technology, like art, is a soaring exercise of the human imagination",);
+    
+        const [quote, setQuote]=useState({
+            quote:  "Technology, like art, is a soaring exercise of the human imagination",
+            author: "Daniel Bell"
+        });
 
     const handleQuote =()=>{
-        setQuote( quotes[Math.floor(Math.random() * quotes.length)]);
+        setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
     }
 
-   
     return (
             <Split
                 style={{display:"flex"}}
-                sizes={[50, 50]}
-                minSize={450,450}
+                sizes={[50,50]}
+                minSize={520,520}
                 expandToMin={false}
                 gutterSize={5}
                 gutterAlign="center"
@@ -28,11 +29,11 @@ const About = () => {
                 cursor="col-resize"
             >
                 <AboutFront
-                quote={quote}
+                quote={quote.quote}
+                author={quote.author}
                 onClick={handleQuote}
-                ></AboutFront>
-                <AboutBack></AboutBack>
-                
+                />
+                <AboutBack/> 
             </Split>
     );
 };

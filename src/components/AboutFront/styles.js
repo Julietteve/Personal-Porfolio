@@ -13,16 +13,28 @@ export const Container = styled.div`
 export const Quote = styled.h2`
     color:ivory;
     margin:5%;
+    margin-bottom:2%;
     text-align:right;
-    animation: ${fadeIn} 5s ease;
-    letter-spacing:0.2rem;
+    animation: ${fadeIn} 2s ease;
+    letter-spacing:0.1rem;
+`;
+
+export const Author = styled.p`
+   color:ivory;
+   text-align:right;
+   animation: ${fadeIn} 2s ease;
+   font-style:italic;
+   margin-right:5%;
+   font-size:0.9rem;
 `;
 export const Info = styled.div`
     color:ivory;
     margin:2%;
     padding:2%;
-    line-height: 1.5;
+    line-height: 2;
     text-align:justify;
+    font-size:0.9rem;
+    animation: ${fadeIn} 2s ease;
    
 
 `;
@@ -52,4 +64,5 @@ export const Button = styled.div`
     justify-content: flex-end;
     margin: 10%;
     margin-right:5%;
+    margin-top:5%;
 `;
