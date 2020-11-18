@@ -5,10 +5,14 @@ export const Container = styled.div`
     display:flex;
     flex-direction:column;
     justify-content:center;
-    width:100vw;
+    width:60vw;
     height:100vh;
     padding:3%;
     background-color:black;
+
+    @media only screen and (max-width: 768px) {
+        width:100vw;
+  }
 `;
 export const Quote = styled.h2`
     color:ivory;
@@ -17,6 +21,10 @@ export const Quote = styled.h2`
     text-align:right;
     animation: ${fadeIn} 2s ease;
     letter-spacing:0.1rem;
+
+    @media only screen and (max-width: 768px) {
+        font-size:1.3rem;
+  }
 `;
 
 export const Author = styled.p`
@@ -35,8 +43,10 @@ export const Info = styled.div`
     text-align:justify;
     font-size:0.9rem;
     animation: ${fadeIn} 2s ease;
-   
 
+    @media only screen and (max-width: 768px) {
+        font-size:0.8rem;
+  }
 `;
 
 export const ChangeButton = styled.button`
@@ -57,6 +67,11 @@ export const ChangeButton = styled.button`
         background-color:ivory;
         color:black;
     }
+
+    @media only screen and (max-width: 768px) {
+        width:50%;
+        font-size: 0.9rem;
+  }
 `;
 
 export const Button = styled.div`

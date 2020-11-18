@@ -13,6 +13,13 @@ const GlobalStyle = createGlobalStyle`
     margin:0;
     position:fixed;
     font-family: "rz-regular","maison-neue-mono",Helvetica,Arial,sans-serif;
+
+    @media only screen and (max-width: 768px) {
+    position: static;
+}
+    &::-webkit-scrollbar {
+    display: none;  
+}
   }
 `;
 

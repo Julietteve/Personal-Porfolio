@@ -3,16 +3,23 @@ import {fadeInRigth} from '../../animations'
 
 export const ContainerWork = styled.div`
     display: flex;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction:column;
+}
 `;
 
 export const Filter = styled.div`
     width:40vw;
-    height:100vh;
+    height:auto;
     background-color:black;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    @media only screen and (max-width: 768px) {
+        width:100%;
+}
 `;
 
 export const CardContainer = styled.div`
@@ -26,6 +33,10 @@ export const CardContainer = styled.div`
     overflow-x:hidden;
     &::-webkit-scrollbar {
     display: none;  
+}
+
+@media only screen and (max-width: 768px) {
+        width:100%;
 }
 `;
 

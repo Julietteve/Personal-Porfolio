@@ -22,6 +22,10 @@ export const Slogan = styled.h1`
   opacity: 0;
   animation: ${fadeInRigth} ease 0.4s forwards;
   animation-delay: 0.4s;
+
+  @media only screen and (max-width: 768px) {
+    font-size:4em;
+  }
 `;
 
 export const Info = styled.div`
@@ -32,13 +36,23 @@ export const Info = styled.div`
   -moz-animation: ${scroll} 20s infinite linear;
   -o-animation: ${scroll} 20s infinite linear;
   animation: ${scroll} 20s infinite linear;
+
+  @media only screen and (max-width: 768px) {
+    margin:2%;
+  }
 `;
 
 export const Scroll = styled.div`
+display:flex;
+align-items:center;
  width: 500px;
   height: 20px;
   overflow:hidden;
   white-space:nowrap;
+  @media only screen and (max-width: 768px) {
+    width:300px;
+    height:60px;
+  }
 `;
 
 export const Circle = styled.img`
@@ -47,8 +61,14 @@ export const Circle = styled.img`
   left: 60%;
   width:25%;
   animation: ${fadeInRigth} ease 0.4s forwards;
-`;
 
+  @media only screen and (max-width: 768px) {
+    width:40%;
+    top:20%;
+    left: 50%;
+  }
+  
+`;
 
 export const Me = styled.a`
     font-size:1em;
@@ -71,7 +91,12 @@ export const Me = styled.a`
     background-color:ivory;
     color:black;
     border: 1px solid black;
-      
+  }
+
+  @media only screen and (max-width: 768px) {
+    width:70%;
+    padding:4%;
+    margin-left:0px;
     }
 `;
 
@@ -79,6 +104,10 @@ export const Box = styled.div`
    display:flex;
    flex-direction:column;
    width:40%;
+
+   @media only screen and (max-width: 768px) {
+    width:50%;
+  }
 `;
 
 export const Artemisa = styled.img`
@@ -87,6 +116,11 @@ export const Artemisa = styled.img`
   z-index:1;
   margin-top:10%;
   animation: ${fadeInRigth} ease 0.4s forwards;
+  @media only screen and (max-width: 768px) {
+    width:40%;
+    left:5%;
+  }
+  
 `;
 
 

@@ -23,6 +23,10 @@ export const NavBarContainer = styled.aside`
     border-right: 0.5px solid ${props => props.border};
     background-color: ${props => props.background};
     color:${props => props.color};
+
+    @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const IconLink = styled.a`

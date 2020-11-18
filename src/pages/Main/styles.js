@@ -9,4 +9,8 @@ export const MainContainer = styled.div`
 export const Section = styled.div`
     width:92%;
     height:100vh;
+
+    @media only screen and (max-width: 768px) {
+     width:100%;
+  }
 `;

@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <Container>
             <Box>
-                <Slogan>Because the outside also matters</Slogan>
+                <Slogan>Because the outside also matters.</Slogan>
                 <Scroll>
                     <Info>{intro}</Info>
                 </Scroll>

@@ -46,6 +46,11 @@ export const Glitch = styled.img`
     left:40%;
     opacity:0.4;
     width:30%;
+
+    @media only screen and (max-width: 768px) {
+    width:80%;
+    left:20%;
+  }
 `;
 
 export const Box = styled.div`
@@ -58,5 +63,10 @@ export const Box = styled.div`
     text-transform:uppercase;
     background-color:black;
     color:ivory;
+
+    @media only screen and (max-width: 768px) {
+    padding:3%;
+    margin:4%;
+  }
     
 `;

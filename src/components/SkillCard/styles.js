@@ -14,11 +14,15 @@ export const FlipCard = styled.div`
     perspective: 1000px;
     width: 50%;
     height: 100vh;
-  
 
     &:hover ${FlipCardInner}{
         transform: rotateY(180deg);
     }
+
+    
+@media only screen and (max-width: 768px) {
+    width: 100%;
+}
 `;
 
 export const FlipCardFront = styled.div`
@@ -28,7 +32,7 @@ export const FlipCardFront = styled.div`
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display:flex;
-    flex-direction: column;
+
 `;
 
 

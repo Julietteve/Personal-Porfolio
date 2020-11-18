@@ -46,12 +46,20 @@ export const CardHolder = styled.div`
 export const ProjectName = styled.h2`
     text-transform:uppercase;
     letter-spacing:0.1rem;
+
+    @media only screen and (max-width: 768px) {
+      font-size:1rem;
+}
 `;
 export const SeeCode = styled.a`
     color: lightgray;
     text-decoration:none;
     padding:3%;
     border-bottom: 1px ivory solid;
+
+    @media only screen and (max-width: 768px) {
+      font-size:0.9rem;
+}
 `;
 
 export const CodeBox = styled.div`
@@ -62,5 +70,9 @@ export const CodeBox = styled.div`
 
 export const Tool = styled.div`
     font-size:0.9rem;
+
+    @media only screen and (max-width: 768px) {
+      font-size:0.9rem;
+}
 
 `;

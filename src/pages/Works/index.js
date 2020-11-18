@@ -25,20 +25,6 @@ const Works = () => {
 
     return (
        <ContainerWork>
-           <CardContainer>
-               {
-                 projects.map((project, index)=> project.filtered === true ?(
-                <Card
-                    key={index}
-                    name={project.name}
-                    tools={project.tools.filter((i)=>(i !== "All")).join(" ")}
-                    repo={project.repo}
-                    image={project.image}
-                />
-                ): "")
-           }
-           </CardContainer>
-
            <Filter>
                <Wrap>
                <Work>Work.</Work>
@@ -57,6 +43,20 @@ const Works = () => {
                </ToolContainer>
               
            </Filter>
+
+           <CardContainer>
+               {
+                 projects.map((project, index)=> project.filtered === true ?(
+                <Card
+                    key={index}
+                    name={project.name}
+                    tools={project.tools.filter((i)=>(i !== "All")).join(" ")}
+                    repo={project.repo}
+                    image={project.image}
+                />
+                ): "")
+           }
+           </CardContainer>
        </ContainerWork>
     );
 };

@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {quotes} from './data';
-import {AboutBack,AboutFront} from '../../components'
-import Split from 'react-split';
-import './stylesheet.css';
+import {AboutBack,AboutFront} from '../../components';
+import {Container} from './styles';
 
 const About = () => {
     
@@ -16,25 +15,14 @@ const About = () => {
     }
 
     return (
-            <Split
-                style={{display:"flex"}}
-                sizes={[50,50]}
-                minSize={520,520}
-                expandToMin={false}
-                gutterSize={5}
-                gutterAlign="center"
-                snapOffset={30}
-                dragInterval={1}
-                direction="horizontal"
-                cursor="col-resize"
-            >
-                <AboutFront
-                quote={quote.quote}
-                author={quote.author}
-                onClick={handleQuote}
-                />
-                <AboutBack/> 
-            </Split>
+        <Container>
+            <AboutFront
+            quote={quote.quote}
+            author={quote.author}
+            onClick={handleQuote}
+            />
+            <AboutBack/> 
+        </Container>
     );
 };
 

@@ -4,6 +4,11 @@ import {fadeInRigth} from '../../animations'
 export const Container = styled.div`
     display:flex;
     width:100%;
+
+    @media only screen and (max-width: 768px) {
+      width:auto;
+      flex-direction:column;
+}
    
 `;
 
@@ -15,6 +20,12 @@ export const DownloadContainer = styled.div`
     color:black;
     text-transform: uppercase;
     letter-spacing: 0.6rem;
+    
+    @media only screen and (max-width: 768px) {
+    width: auto;
+    margin: 10%;
+    text-align:center;
+}
 `;
 export const Skill= styled.div`
     display:flex;
@@ -22,7 +33,10 @@ export const Skill= styled.div`
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    
+
+    @media only screen and (max-width: 768px) {
+    flex-direction:column;
+}
 `;
 export const SkillsContainer = styled.div`
     display:flex;
@@ -32,7 +46,14 @@ export const SkillsContainer = styled.div`
     align-items:center;
     height:100vh;
     animation: ${fadeInRigth} ease 0.4s forwards;
+   
+    @media only screen and (max-width: 768px) {
+    height:auto;
+    width:100%;;
+   
+}
 `;
+
 
 
 
