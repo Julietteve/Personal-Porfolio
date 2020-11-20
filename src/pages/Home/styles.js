@@ -6,14 +6,10 @@ export const Container = styled.div`
   width:100vw;
   height:100vh;
   display:flex;
-  background-color:ivory;
+  background-color:white;
   flex-direction:row;
   align-items:center;
   justify-content:center;
-
-  @media only screen and (max-width: 768px) {
-    height:auto;
-  }
 `;
 
 export const Slogan = styled.h1`
@@ -77,7 +73,7 @@ export const Circle = styled.img`
 export const Me = styled.a`
     font-size:1em;
     background-color:black;
-    color:ivory;
+    color:white;
     text-decoration:none;
     text-transform:uppercase;
     padding:2%;
@@ -92,7 +88,7 @@ export const Me = styled.a`
     animation: ${fadeInRigth} ease 0.4s forwards;
     animation-delay: 0.4s;
     &:hover{
-    background-color:ivory;
+    background-color:white;
     color:black;
     border: 1px solid black;
   }
