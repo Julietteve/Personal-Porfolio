@@ -17,7 +17,7 @@ export const Container = styled.div`
 `;
 export const Quote = styled.h2`
     color:ivory;
-    margin:5%;
+    margin-top:10%;
     margin-bottom:2%;
     text-align:right;
     animation: ${fadeIn} 2s ease;
