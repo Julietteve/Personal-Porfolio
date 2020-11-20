@@ -8,6 +8,13 @@ export const porfolio = [
     },
 
     {
+        name: "Aaron Horkey's Universe",
+        tools : [ "All", "HTML", "CSS", "JQuery"],
+        repo : "https://github.com/Julietteve/Aaron-Honkey-ArtPorfolio",
+        image: "images/horkey.jpg"
+    },
+
+    {
         name: "Tiny People",
         tools : [ "All", "HTML", "CSS", "Sass", "Bootstrap"],
         repo : "https://github.com/Julietteve/tiny-people",
@@ -32,13 +39,6 @@ export const porfolio = [
         repo : "https://github.com/Julietteve/The-Juglar-Press",
         image: "images/juglar.jpg"
     },
-    {
-        name: "Aaron Horkey's Universe",
-        tools : [ "All", "HTML", "CSS", "JQuery"],
-        repo : "https://github.com/Julietteve/Aaron-Honkey-ArtPorfolio",
-        image: "images/horkey.jpg"
-    },
-
     {
         name: "Apeirón",
         tools : [ "All", "HTML", "CSS", "Bootstrap", "JQuery", "MySQL", "Laravel"],

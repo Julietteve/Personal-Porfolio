@@ -4,14 +4,15 @@ import {fadeIn} from '../../animations';
 export const Container = styled.div`
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content: space-evenly;
     width:60vw;
     height:100vh;
-    padding:3%;
     background-color:black;
+    padding-right:7%;
+    padding-left:7%;
 
     @media only screen and (max-width: 768px) {
-        width:100vw;
+        width:100%;
   }
 `;
 export const Quote = styled.h2`
@@ -21,6 +22,8 @@ export const Quote = styled.h2`
     text-align:right;
     animation: ${fadeIn} 2s ease;
     letter-spacing:0.1rem;
+    margin-right:0;
+    text-transform:uppercase;
 
     @media only screen and (max-width: 768px) {
         font-size:1.3rem;
@@ -34,11 +37,10 @@ export const Author = styled.p`
    font-style:italic;
    margin-right:5%;
    font-size:0.9rem;
+   margin-right:0;
 `;
 export const Info = styled.div`
     color:ivory;
-    margin:2%;
-    padding:2%;
     line-height: 2;
     text-align:justify;
     font-size:0.9rem;
@@ -59,6 +61,7 @@ export const ChangeButton = styled.button`
     text-transform: uppercase;
     letter-spacing:0.6rem;
     cursor: pointer;
+    outline:none;
 
     :focus:hover{
         outline:none;
@@ -68,8 +71,9 @@ export const ChangeButton = styled.button`
         color:black;
     }
 
+
     @media only screen and (max-width: 768px) {
-        width:50%;
+        width:60%;
         font-size: 0.9rem;
   }
 `;
@@ -78,6 +82,7 @@ export const Button = styled.div`
     display: flex;
     justify-content: flex-end;
     margin: 10%;
-    margin-right:5%;
     margin-top:5%;
+    margin-right:0;
+       animation: ${fadeIn} 2s ease;
 `;

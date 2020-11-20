@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Info, Artemisa, Slogan, Box, Me, Scroll, Circle} from './styles';
 import {intro} from './data';
-import whales from "../../whales.jpg";
+import cv from "./Julieta-Garcia CV-2020.pdf";
 
 const Home = () => {    
 
@@ -15,7 +15,7 @@ const Home = () => {
                 <Me 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                href={whales}
+                href={cv}
                 download
                 >
                 Download CV

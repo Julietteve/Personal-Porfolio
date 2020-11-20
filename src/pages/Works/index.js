@@ -41,9 +41,7 @@ const Works = () => {
                     ))
                }
                </ToolContainer>
-              
            </Filter>
-
            <CardContainer>
                {
                  projects.map((project, index)=> project.filtered === true ?(

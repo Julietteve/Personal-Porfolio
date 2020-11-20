@@ -8,6 +8,7 @@ export const Container = styled.div`
     @media only screen and (max-width: 768px) {
       width:auto;
       flex-direction:column;
+      height:auto;
 }
    
 `;
@@ -20,6 +21,12 @@ export const DownloadContainer = styled.div`
     color:black;
     text-transform: uppercase;
     letter-spacing: 0.6rem;
+    text-align:center;
+
+    @media screen and (max-width: 992px) {
+    width: 15%;
+    padding: 2%;
+  }
     
     @media only screen and (max-width: 768px) {
     width: auto;
@@ -46,6 +53,10 @@ export const SkillsContainer = styled.div`
     align-items:center;
     height:100vh;
     animation: ${fadeInRigth} ease 0.4s forwards;
+
+    @media screen and (max-width: 992px) {
+    width: 85%;
+  }
    
     @media only screen and (max-width: 768px) {
     height:auto;

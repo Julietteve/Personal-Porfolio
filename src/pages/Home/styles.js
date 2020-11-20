@@ -10,6 +10,10 @@ export const Container = styled.div`
   flex-direction:row;
   align-items:center;
   justify-content:center;
+
+  @media only screen and (max-width: 768px) {
+    height:auto;
+  }
 `;
 
 export const Slogan = styled.h1`
@@ -94,7 +98,7 @@ export const Me = styled.a`
   }
 
   @media only screen and (max-width: 768px) {
-    width:70%;
+    width:100%;
     padding:4%;
     margin-left:0px;
     }
@@ -106,7 +110,7 @@ export const Box = styled.div`
    width:40%;
 
    @media only screen and (max-width: 768px) {
-    width:50%;
+    width:45%;
   }
 `;
 

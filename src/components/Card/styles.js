@@ -72,7 +72,7 @@ export const Tool = styled.div`
     font-size:0.9rem;
 
     @media only screen and (max-width: 768px) {
-      font-size:0.9rem;
+      font-size:0.8rem;
 }
 
 `;

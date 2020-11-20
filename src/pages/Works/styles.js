@@ -6,6 +6,7 @@ export const ContainerWork = styled.div`
 
     @media only screen and (max-width: 768px) {
       flex-direction:column;
+      height:auto;
 }
 `;
 
@@ -36,7 +37,8 @@ export const CardContainer = styled.div`
 }
 
 @media only screen and (max-width: 768px) {
-        width:100%;
+    width:100%;
+    height:auto;
 }
 `;
 
@@ -50,6 +52,10 @@ export const Work = styled.h1`
     text-align:center;
     margin:0;
     animation: ${fadeInRigth} ease 0.4s forwards;
+
+    @media screen and (max-width: 992px) {
+    font-size:4rem;
+  }
 `;
 
 export const Button = styled.button`

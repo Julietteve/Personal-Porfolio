@@ -1,4 +1,4 @@
-import React, {useState}from 'react';
+import React from 'react';
 import {IconLink, Container, Icon, CloseIcon, Links, Social, NavIcon} from './styles';
 import {FaLinkedinIn, FaGithub} from 'react-icons/fa';
 import{FiMail, FiCodesandbox} from 'react-icons/fi';
@@ -6,27 +6,28 @@ import {MobileNav} from '../index'
 
 const SideBar = ({isOpen,toggle}) => {
 
-    const [background, setColor] = useState("ivory");
-    
+    const currentLocation = window.location.pathname;
+    const backgroundColor = currentLocation === "/" || currentLocation === "/skills" ? "ivory" : "black";
+    const iconColor= backgroundColor === "ivory" ? "black" : "ivory";
 
     return (
         <div>
-            <MobileNav  toggle={toggle} color={background} iconColor={background==="black" ? "ivory" : "black"}/>
+            <MobileNav  toggle={toggle} color={backgroundColor} iconColor={iconColor}/>
             <Container isOpen={isOpen} onClick={toggle}>
            <Icon>
                <CloseIcon onClick={toggle}/>
                </Icon>
                <Links>
-                            <NavIcon exact to="/"  onClick={() => setColor("ivory")}>
+                            <NavIcon exact to="/">
                             Home
                             </NavIcon>
-                            <NavIcon  to="/about" onClick={() => setColor("black")}>
+                            <NavIcon  to="/about">
                             About
                             </NavIcon>
-                            <NavIcon to="/skills" onClick={() => setColor("ivory")} >
+                            <NavIcon to="/skills">
                             Skills
                             </NavIcon>
-                            <NavIcon to="/works" onClick={() => setColor("black")}>
+                            <NavIcon to="/works">
                             Works
                             </NavIcon>
                </Links>

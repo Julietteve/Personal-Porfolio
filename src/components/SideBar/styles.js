@@ -42,12 +42,18 @@ export const Links = styled.div`
 `;
 
 export const Social = styled.div`
-   display: flex;
+display:none;
+    
+@media only screen and (max-width: 768px) {
+    display: flex;
     flex-direction:row;
     align-items:center;
     justify-content:space-around;
     margin-left:20%;
     margin-right:20%;
+  }
+    
+  
 `;
 
 export const IconLink = styled.a`
