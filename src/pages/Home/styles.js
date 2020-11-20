@@ -10,6 +10,7 @@ export const Container = styled.div`
   flex-direction:row;
   align-items:center;
   justify-content:center;
+
 `;
 
 export const Slogan = styled.h1`
@@ -59,11 +60,11 @@ export const Circle = styled.img`
   position: absolute;
   top:10%;
   left: 60%;
-  width:25%;
+  width:30%;
   animation: ${fadeInRigth} ease 0.4s forwards;
 
   @media only screen and (max-width: 768px) {
-    width:60%;
+    width:40%;
     top:20%;
     left: 50%;
   }
@@ -117,7 +118,7 @@ export const Artemisa = styled.img`
   margin-top:10%;
   animation: ${fadeInRigth} ease 0.4s forwards;
   @media only screen and (max-width: 768px) {
-    width:60%;
+    width:45%;
     left:5%;
   }
   
