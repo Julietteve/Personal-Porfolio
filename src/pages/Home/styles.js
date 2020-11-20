@@ -63,7 +63,7 @@ export const Circle = styled.img`
   animation: ${fadeInRigth} ease 0.4s forwards;
 
   @media only screen and (max-width: 768px) {
-    width:40%;
+    width:60%;
     top:20%;
     left: 50%;
   }
@@ -117,7 +117,7 @@ export const Artemisa = styled.img`
   margin-top:10%;
   animation: ${fadeInRigth} ease 0.4s forwards;
   @media only screen and (max-width: 768px) {
-    width:40%;
+    width:60%;
     left:5%;
   }
   
