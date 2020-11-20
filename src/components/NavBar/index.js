@@ -56,7 +56,7 @@ const NavBar = () => {
                 <IconLink
                     color= {color}
                     rel="noopener noreferrer" 
-                    href="tel:+54 9 11 7365-7252">
+                    href="https://codesandbox.io/u/Julietteve/sandboxes">
                     <FiCodesandbox/>
                 </IconLink>
                 <IconLink

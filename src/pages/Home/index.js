@@ -22,7 +22,7 @@ const Home = () => {
                 </Me>
             </Box>
             <Circle src="images/circle.png"></Circle>
-            <Artemisa src="https://i.pinimg.com/originals/83/cd/1a/83cd1ab55f220c4ac7083f63fa20a860.png"/>
+            <Artemisa src="images/artemisa.png"/>
         </Container>
 
 
