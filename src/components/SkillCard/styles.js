@@ -37,7 +37,7 @@ export const FlipCardFront = styled.div`
 
 
 export const FlipCardBack = styled.div`
-    background-color: ivory;
+    background-color: white;
     transform: rotateY(180deg);
     position: absolute;
     width: 100%;

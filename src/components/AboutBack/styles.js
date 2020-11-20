@@ -17,7 +17,7 @@ export const About = styled.h1`
     font-size: 15rem;
     word-wrap:break-word;
     line-height:0.8;
-    color: ivory;
+    color: white;
   text-align: left;
   text-transform:uppercase;
   animation: ${fadeIn} 2s ease;

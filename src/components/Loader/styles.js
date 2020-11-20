@@ -27,7 +27,7 @@ export const Line = styled.div`
 
 
 export const Name = styled.p`
-    color:ivory;
+    color:white;
     text-transform:uppercase;
     letter-spacing:0.5rem;
     animation: ${zoomOut} .5s ease-out, ${fadeOut} .9s ease-in-out;

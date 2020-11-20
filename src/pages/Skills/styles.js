@@ -48,7 +48,7 @@ export const Skill= styled.div`
 export const SkillsContainer = styled.div`
     display:flex;
     width:65%;
-    background-color: ivory;
+    background-color: white;
     justify-content:center;
     align-items:center;
     height:100vh;

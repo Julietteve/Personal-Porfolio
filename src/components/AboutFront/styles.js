@@ -16,7 +16,7 @@ export const Container = styled.div`
   }
 `;
 export const Quote = styled.h2`
-    color:ivory;
+    color:white;
     margin-top:10%;
     margin-bottom:2%;
     text-align:right;
@@ -31,7 +31,7 @@ export const Quote = styled.h2`
 `;
 
 export const Author = styled.p`
-   color:ivory;
+   color:white;
    text-align:right;
    animation: ${fadeIn} 2s ease;
    font-style:italic;
@@ -40,7 +40,7 @@ export const Author = styled.p`
    margin-right:0;
 `;
 export const Info = styled.div`
-    color:ivory;
+    color:white;
     line-height: 2;
     text-align:justify;
     font-size:0.9rem;
@@ -53,8 +53,8 @@ export const Info = styled.div`
 
 export const ChangeButton = styled.button`
     background-color:transparent;
-    color:ivory;
-    border: 1px solid ivory ;
+    color:white;
+    border: 1px solid white ;
     width:40%;
     padding:2%;
     text-align: center;
@@ -67,7 +67,7 @@ export const ChangeButton = styled.button`
         outline:none;
     }
     :hover{
-        background-color:ivory;
+        background-color:white;
         color:black;
     }
 

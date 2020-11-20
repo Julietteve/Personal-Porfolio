@@ -45,7 +45,7 @@ export const CardContainer = styled.div`
 export const Work = styled.h1`
     width:100%;
     text-transform:uppercase;
-    color:ivory;
+    color:white;
     font-size:6rem;
     word-wrap:break-word;
     line-height:1;
@@ -59,14 +59,14 @@ export const Work = styled.h1`
 `;
 
 export const Button = styled.button`
-    color:ivory;
+    color:white;
     background-color:transparent;
     border: none;
     margin:2%;
     text-transform: uppercase;
 
     :hover{
-        background-color:ivory;
+        background-color:white;
         color:black;
     }
 
@@ -97,7 +97,7 @@ export const Meme = styled.div`
 `;
 
 export const Choose = styled.div`
-    color:ivory;
+    color:white;
     font-size:0.9rem;
     text-align:center;
     margin:10%;

@@ -55,7 +55,7 @@ export const SeeCode = styled.a`
     color: lightgray;
     text-decoration:none;
     padding:3%;
-    border-bottom: 1px ivory solid;
+    border-bottom: 1px white solid;
 
     @media only screen and (max-width: 768px) {
       font-size:0.9rem;

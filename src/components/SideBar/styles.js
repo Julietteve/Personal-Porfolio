@@ -20,7 +20,7 @@ export const Container = styled.aside`
 `;
 
 export const CloseIcon =styled(MdClose)`
-    color: ivory;
+    color: white;
     cursor: pointer;
 `;
 
@@ -60,7 +60,7 @@ export const IconLink = styled.a`
     font-size:1.2rem;
     transition: all .2s ease-in-out;
     cursor: pointer;
-    color: ivory;
+    color: white;
     animation: ${fadeInRigth} ease 0.4s forwards;
 
     &:hover{
@@ -72,7 +72,7 @@ export const NavIcon = styled(LinkIcon)`
     font-size:2rem;
     text-decoration: none;
     text-transform:uppercase;
-    color:ivory;
+    color:white;
     letter-spacing:0.7rem;
     margin:3%;
     transition: all .2s ease-in-out;

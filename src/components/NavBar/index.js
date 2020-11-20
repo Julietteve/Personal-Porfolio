@@ -7,9 +7,9 @@ import {NavBarContainer,IconLink, NavIcon, RoutesContainer, AnchorsContainer, Co
 const NavBar = () => {
 
     const currentLocation = window.location.pathname;
-    const backgroundColor = currentLocation === "/" || currentLocation === "/skills" ? "ivory" : "black";
-    const color = backgroundColor==="ivory" ? "#101010" : "ivory";
-    const border = backgroundColor==="ivory" ? "#D1D1D1" : "#262626";
+    const backgroundColor = currentLocation === "/" || currentLocation === "/skills" ? "white" : "black";
+    const color = backgroundColor==="white" ? "#101010" : "white";
+    const border = backgroundColor==="white" ? "#D1D1D1" : "#262626";
 
     return (
         <NavBarContainer background= {backgroundColor} color= {color} border={border}>

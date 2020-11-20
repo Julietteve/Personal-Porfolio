@@ -4,7 +4,7 @@ import {Link as LinkHome} from 'react-router-dom'
 export const Container = styled.div`
     width:100vw;
     height:100vh;
-    background-color:ivory;
+    background-color:white;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -31,7 +31,7 @@ export const Home = styled(LinkHome)`
     text-decoration:none;
     position:relative;
     z-index:1;
-    color:ivory;
+    color:white;
     letter-spacing:0.4rem;
     transition: all .2s ease-in-out;
 
@@ -62,7 +62,7 @@ export const Box = styled.div`
     z-index:1;
     text-transform:uppercase;
     background-color:black;
-    color:ivory;
+    color:white;
 
     @media only screen and (max-width: 768px) {
     padding:3%;

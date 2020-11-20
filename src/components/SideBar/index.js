@@ -7,8 +7,8 @@ import {MobileNav} from '../index'
 const SideBar = ({isOpen,toggle}) => {
 
     const currentLocation = window.location.pathname;
-    const backgroundColor = currentLocation === "/" || currentLocation === "/skills" ? "ivory" : "black";
-    const iconColor= backgroundColor === "ivory" ? "black" : "ivory";
+    const backgroundColor = currentLocation === "/" || currentLocation === "/skills" ? "white" : "black";
+    const iconColor= backgroundColor === "white" ? "black" : "white";
 
     return (
         <div>
