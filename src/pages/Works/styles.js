@@ -63,6 +63,8 @@ export const Button = styled.button`
     border: none;
     margin:2%;
     text-transform: uppercase;
+    font-size:15px;
+    letter-spacing:1px;
 
     :hover{
         background-color:white;
@@ -97,9 +99,10 @@ export const Meme = styled.div`
 
 export const Choose = styled.div`
     color:white;
-    font-size:0.9rem;
+    font-size:13px;
+    letter-spacing:1px;
     text-align:center;
-    margin:10%;
+    margin:5%;
     animation: ${fadeInRigth} ease 0.4s forwards;
     
     :hover ${Meme}{

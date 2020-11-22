@@ -18,11 +18,16 @@ const Home = () => {
                 href={cv}
                 download
                 >
-                Download CV
-                </Me>
+                    Download CV </Me>
+                    <Me 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                href={cv}
+                download
+                >
+                ↓ </Me>
+
             </Box>
-            <Circle src="images/circle.png"></Circle>
-            <Artemisa src="images/artemisa.png"/>
         </Container>
 
 

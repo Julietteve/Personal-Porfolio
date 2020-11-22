@@ -2,14 +2,26 @@ import styled from 'styled-components/macro';
 import {fadeIn} from '../../animations'
 
 export const OverLayer = styled.div`
-  transition: .5s ease;
-  opacity: 0;
   position: absolute;
-  top: 40%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+`;
+
+export const CodeContainer = styled.div`
+   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
+
 `;
 
 export const Cover = styled.img`
@@ -23,17 +35,16 @@ export const Cover = styled.img`
 
 export const CardHolder = styled.div`
     width:calc(100%/2);
-    height:auto;
+    height:375px;
+    position:relative;
     display:flex;
     flex-direction:column;
     align-items:center;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
 	cursor: pointer;
     color:white;
     margin:0;
     animation: ${fadeIn} ease-in-out 0.4s;
+    
   
     &:hover ${OverLayer}{
         opacity:1;
@@ -41,6 +52,11 @@ export const CardHolder = styled.div`
     &:hover ${Cover}{
         opacity:0.1;
     }
+
+    
+    @media only screen and (max-width: 768px) {
+        height:240px;
+}
 `;
 
 export const ProjectName = styled.h2`

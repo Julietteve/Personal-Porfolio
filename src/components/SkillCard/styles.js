@@ -32,6 +32,7 @@ export const FlipCardFront = styled.div`
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display:flex;
+    letter-spacing:1px;
 
 `;
 
@@ -59,7 +60,8 @@ export const Animal = styled.img`
 export const Description = styled.div`
     text-align: justify;
     line-height:1.5;
-    font-size:0.9rem;
+    font-size:13px;
+    letter-spacing:1px;
 `;
 
 export const Kind = styled.h1`

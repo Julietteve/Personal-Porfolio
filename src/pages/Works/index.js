@@ -29,7 +29,7 @@ const Works = () => {
                <Wrap>
                <Work>Work.</Work>
                </Wrap>
-               <Choose> Filter by the technology used in each project
+               <Choose> Filter by technology 
                <Meme>
                    <Img src="images/work.jpg"></Img>
                </Meme>
