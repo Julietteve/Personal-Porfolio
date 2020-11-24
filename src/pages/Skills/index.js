@@ -1,14 +1,15 @@
 import React from 'react';
 import {SkillCard} from '../../components';
 import {skills} from './data';
-import {Container, SkillsContainer,DownloadContainer, Skill} from './styles'
+import {Container, SkillsContainer,Skill, HoverLeft, HoverRight} from './styles'
 
 const Skills = () => {
 
     return (
       <Container>
-              <DownloadContainer>Hover on skill →</DownloadContainer>
-               <SkillsContainer>  
+               <SkillsContainer>
+                 <HoverLeft> hover on me ━</HoverLeft>
+                 <HoverRight> hover on me ━</HoverRight>
                  <Skill>
                  {
                    skills.map((item, index)=>(

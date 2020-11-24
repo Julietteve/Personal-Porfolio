@@ -14,6 +14,7 @@ export const FlipCard = styled.div`
     perspective: 1000px;
     width: 50%;
     height: 100vh;
+    margin:1%;
 
     &:hover ${FlipCardInner}{
         transform: rotateY(180deg);
@@ -27,13 +28,13 @@ export const FlipCard = styled.div`
 
 export const FlipCardFront = styled.div`
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width:100%;
+    height:100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display:flex;
-    letter-spacing:1px;
-
+    align-items:center;
+    justify-content:center;
 `;
 
 
@@ -45,16 +46,17 @@ export const FlipCardBack = styled.div`
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
 `;
 
 
 export const Animal = styled.img`
     width:100%;
-    height:100%;
-    margin:0 auto;
-    padding:0;
-    margin:0;
-    position:absolute;
+    height:80%;
+
 `;
 
 export const Description = styled.div`

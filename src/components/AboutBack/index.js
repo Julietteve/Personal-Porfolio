@@ -1,16 +1,15 @@
 import React from 'react';
-import {Container, About} from './styles';
+import {Container,Info, Line, Love} from './styles';
+import {Intro, Education} from './data';
 
 const AboutBack = () => {
-    
-    let about= [];
-    for(let i=0; i<22; i++){
-        about.push("about. ");
-    }
 
     return (
         <Container>
-            <About>{about}</About>
+            <Love>Yeah, I love inspirational quotes.</Love>
+            <Line></Line>
+            <Info>{Intro}</Info>
+            <Info>{Education}</Info>
         </Container>
     );
 };

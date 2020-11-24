@@ -2,7 +2,7 @@ export const skills = [
     {
         image: "images/soft.jpg",
         kind: "Soft.",
-        description: "Since my days of formation at University I learned to work in small and big teams, connect to people and improve my communication skills. Over the multiple project I've faced I could solve tough situations, where empathy and endurence were needed. I consider myself as a positive and tenacious person as I 'm good at seeing the bright side of  anything that challenges me.",
+        description: "Since my days of formation, I learned to work in small and big teams, connect to people and improve my communication skills. Over the multiple project I've faced I could solve tough situations, where empathy and endurence were needed. I consider myself as a positive and tenacious person as I 'm good at seeing the bright side of  anything that challenges me.",
         skill: ["Team-Work", "Energic", "Creative", "Empathic", "Committed", "Sensitive", "Genuine", "Detail-oriented"],
         tools: [],
     },

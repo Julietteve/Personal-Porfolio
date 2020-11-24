@@ -1,13 +1,11 @@
 import React from 'react';
-import {Container, Quote, Info, ChangeButton, Button, Author} from './styles';
-import {Intro} from './data';
+import {Container, Quote, ChangeButton, Button, Author, Love} from './styles';
 
 const AboutFront = ({quote, onClick, author}) => {
     return (
         <Container>
-            <Quote>{`'${quote}'`}</Quote>
+            <Quote>{`" ${quote} "  ━`}</Quote>
             <Author>{author}</Author>
-                <Info>{Intro}</Info>
             <Button>
             <ChangeButton onClick={onClick}> + quotes</ChangeButton>
             </Button>

@@ -43,7 +43,6 @@ export const CardContainer = styled.div`
 
 export const Work = styled.h1`
     width:100%;
-    text-transform:uppercase;
     color:white;
     font-size:6rem;
     word-wrap:break-word;
@@ -51,6 +50,9 @@ export const Work = styled.h1`
     text-align:center;
     margin:0;
     animation: ${fadeInRigth} ease 0.4s forwards;
+   line-height:1;
+   letter-spacing:0.2rem;
+   text-transform:uppercase;
 
     @media screen and (max-width: 992px) {
     font-size:4rem;
@@ -62,17 +64,16 @@ export const Button = styled.button`
     background-color:transparent;
     border: none;
     margin:2%;
-    text-transform: uppercase;
     font-size:15px;
-    letter-spacing:1px;
+    letter-spacing:0.2rem;
+    text-transform:lowercase;
 
     :hover{
-        background-color:white;
-        color:black;
+        text-decoration:line-through;
     }
 
     :focus{
-        text-decoration:line-through;
+         text-decoration:line-through;
         border: none;
         outline:none;
     }
@@ -84,6 +85,7 @@ export const ToolContainer = styled.div`
     justify-content:space-evenly;
     margin:10%;
     animation: ${fadeInRigth} ease 0.4s forwards;
+    margin-top:20px;
 `;
 
 export const Img = styled.img`
@@ -100,7 +102,7 @@ export const Meme = styled.div`
 export const Choose = styled.div`
     color:white;
     font-size:13px;
-    letter-spacing:1px;
+    letter-spacing:0.1rem;
     text-align:center;
     margin:5%;
     animation: ${fadeInRigth} ease 0.4s forwards;
@@ -116,6 +118,7 @@ export const Wrap = styled.div`
    align-items:center;
    width:80%;
    margin:5%;
+  
 `;
 
 

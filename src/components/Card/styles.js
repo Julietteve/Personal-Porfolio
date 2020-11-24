@@ -21,7 +21,7 @@ export const CodeContainer = styled.div`
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-
+  padding:3%;
 `;
 
 export const Cover = styled.img`
@@ -29,13 +29,14 @@ export const Cover = styled.img`
     height:auto;
     transition: .5s ease;
     backface-visibility: hidden;
-    opacity:1;
+    opacity:0.1;
     display:block;
+    filter: grayscale(20%)
 `;
 
 export const CardHolder = styled.div`
     width:calc(100%/2);
-    height:375px;
+    height:420px;
     position:relative;
     display:flex;
     flex-direction:column;
@@ -50,7 +51,7 @@ export const CardHolder = styled.div`
         opacity:1;
     }
     &:hover ${Cover}{
-        opacity:0.1;
+        opacity:0.5;
     }
 
     
@@ -59,9 +60,8 @@ export const CardHolder = styled.div`
 }
 `;
 
-export const ProjectName = styled.h2`
-    text-transform:uppercase;
-    letter-spacing:0.1rem;
+export const ProjectName = styled.p`
+    letter-spacing:0.2rem;
 
     @media only screen and (max-width: 768px) {
       font-size:1rem;

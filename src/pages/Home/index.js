@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Info, Artemisa, Slogan, Box, Me, Scroll, Circle} from './styles';
+import {About, Data, What, Type, Container, Info, Artemisa, Slogan, Box, Me, Scroll, Circle} from './styles';
 import {intro} from './data';
 import cv from "./Julieta-Garcia CV-2020.pdf";
 
@@ -8,24 +8,30 @@ const Home = () => {
     return (
         <Container>
             <Box>
+                <About>
+                    <What>
+                        <Type>What</Type>
+                        <Data>Front End</Data>
+                        <Data>Web design</Data>
+                    </What>
+                    <What>
+                        <Type>Who</Type>
+                        <Data>Julieta Garcia</Data>
+                        <Data>Autentic passionate</Data>
+                    </What>
+                </About>
+                <Artemisa src= "images/artemisa.png"></Artemisa>
                 <Slogan>Because the outside also matters.</Slogan>
-                <Scroll>
+                {/* <Scroll>
                     <Info>{intro}</Info>
-                </Scroll>
+                </Scroll> */}
                 <Me 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 href={cv}
                 download
                 >
-                    Download CV </Me>
-                    <Me 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                href={cv}
-                download
-                >
-                ↓ </Me>
+                    Download CV   </Me>
 
             </Box>
         </Container>

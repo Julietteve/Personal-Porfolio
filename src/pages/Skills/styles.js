@@ -3,6 +3,7 @@ import {fadeInRigth} from '../../animations'
 
 export const Container = styled.div`
     display:flex;
+    justify-content:center;
     width:100%;
 
     @media only screen and (max-width: 768px) {
@@ -13,27 +14,6 @@ export const Container = styled.div`
    
 `;
 
-export const DownloadContainer = styled.div`
-    width:35%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:black;
-    text-transform: uppercase;
-    letter-spacing: 0.6rem;
-    text-align:center;
-
-    @media screen and (max-width: 992px) {
-    width: 15%;
-    padding: 2%;
-  }
-    
-    @media only screen and (max-width: 768px) {
-    width: auto;
-    margin: 10%;
-    text-align:center;
-}
-`;
 export const Skill= styled.div`
     display:flex;
     width:100%;
@@ -47,7 +27,7 @@ export const Skill= styled.div`
 `;
 export const SkillsContainer = styled.div`
     display:flex;
-    width:65%;
+    width:80%;
     background-color: white;
     justify-content:center;
     align-items:center;
@@ -65,6 +45,27 @@ export const SkillsContainer = styled.div`
 }
 `;
 
+export const HoverRight = styled.div`
+    position:absolute;
+    top:38%;
+    right: -20%;
+    transform: rotate(90deg);
+    letter-spacing: 0.2rem;
+    font-size:14px;
+    width:400px;
+
+`;
+
+export const HoverLeft = styled.div`
+    position:absolute;
+    bottom:38%;
+    left: -20%;
+    transform: rotate(-90deg);
+    letter-spacing: 0.2rem;
+    font-size:14px;
+    width:400px;
+
+`;
 
 
 

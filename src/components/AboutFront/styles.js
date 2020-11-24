@@ -4,25 +4,26 @@ import {fadeIn} from '../../animations';
 export const Container = styled.div`
     display:flex;
     flex-direction:column;
-    justify-content: space-evenly;
-    width:60vw;
+    justify-content:center;
+    width:40vw;
     height:100vh;
     background-color:black;
-    padding-right:5%;
-    padding-left:5%;
+    padding-right:3%;
+    padding-left:10%;
 
     @media only screen and (max-width: 768px) {
         width:100%;
   }
 `;
-export const Quote = styled.h1`
+export const Quote = styled.div`
     color:white;
     margin-top:10%;
     margin-bottom:2%;
-    text-align:right;
+    text-align:left;
     animation: ${fadeIn} 2s ease;
-    letter-spacing:0.1rem;
+    letter-spacing:0.2rem;
     margin-right:0;
+    font-size:1.5rem;
 
     @media only screen and (max-width: 768px) {
         font-size:1.3rem;
@@ -32,43 +33,29 @@ export const Quote = styled.h1`
 
 export const Author = styled.p`
    color:white;
-   text-align:right;
+   text-align:left;
    animation: ${fadeIn} 2s ease;
    margin-right:5%;
    font-size:0.9rem;
    margin-right:0;
-   letter-spacing:0.2rem;
-`;
-export const Info = styled.div`
-    color:white;
-    line-height: 2;
-    text-align:justify;
-    font-size:13px;
-    animation: ${fadeIn} 2s ease;
-    letter-spacing:1px;
+   letter-spacing:0.1rem;
+   padding-top:20px;
 `;
 
 export const ChangeButton = styled.button`
     background-color:transparent;
     color:white;
-    border: 1px solid white ;
-    width:40%;
-    padding:2%;
+    width:50%;
+    padding-top:2%;
     text-align: center;
     text-transform: uppercase;
     letter-spacing:0.6rem;
     cursor: pointer;
     outline:none;
-
+    border:none;
     :focus:hover{
         outline:none;
     }
-    :hover{
-        background-color:white;
-        color:black;
-    }
-
-
     @media only screen and (max-width: 768px) {
         width:60%;
         font-size: 0.9rem;
@@ -81,5 +68,10 @@ export const Button = styled.div`
     margin: 10%;
     margin-top:5%;
     margin-right:0;
-       animation: ${fadeIn} 2s ease;
+    animation: ${fadeIn} 2s ease;
+
+    :hover{
+    text-decoration: underline;
+    }
 `;
+
