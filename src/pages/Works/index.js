@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {ContainerWork, Scroll, Img, Meme, Choose,ToolContainer, Button, Work,CardContainer,Filter} from './styles';
+import {ContainerWork, Scroll, Foot, Choose,ToolContainer, Button,CardContainer,Filter} from './styles';
 import {porfolio, tools} from './data';
-import {Card} from '../../components'
+import {Card, Footer} from '../../components'
 
 const Works = () => {
 
@@ -49,6 +49,9 @@ const Works = () => {
                 ): "")
            }
            </CardContainer>
+           <Foot>
+               <Footer></Footer>
+           </Foot>
        </ContainerWork>
     );
 };

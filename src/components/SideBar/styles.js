@@ -11,7 +11,7 @@ export const Container = styled.aside`
     background-color:black;
     top: 0;
     right:0;
-    transition: 0.3 ease-in-out;
+    transition: 0.6 ease-in-out;
     display:flex;
     justify-content:center;
     flex-direction: column;

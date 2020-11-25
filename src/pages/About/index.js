@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {quotes} from './data';
-import {AboutBack,AboutFront} from '../../components';
-import {Container} from './styles';
+import {AboutBack,AboutFront,Footer} from '../../components';
+import {Container, Foot} from './styles';
 
 const About = () => {
     
@@ -22,6 +22,9 @@ const About = () => {
             onClick={handleQuote}
             />
             <AboutBack/> 
+            <Foot>
+               <Footer></Footer>
+                  </Foot>
         </Container>
     );
 };

@@ -1,6 +1,5 @@
 import React from 'react';
-import {About, Data, What, Type, Container, Info, Artemisa, Slogan, Box, Me, Scroll, Circle} from './styles';
-import {intro} from './data';
+import {About, Data, What, Type, Container, Artemisa, Slogan, Box, Me, Foot} from './styles';
 import cv from "./Julieta-Garcia CV-2020.pdf";
 import {Footer} from '../../components'
 
@@ -30,8 +29,10 @@ const Home = () => {
                 download
                 >
                     Download CV   </Me>
-                <Footer/>
             </Box>
+            <Foot>
+               <Footer></Footer>
+            </Foot>
         </Container>
 
 

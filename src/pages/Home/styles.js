@@ -11,7 +11,9 @@ export const Container = styled.div`
   justify-content:center;
 
   @media only screen and (max-width: 768px) {
+    padding-top:20%;
     flex-direction:column;
+    height:100%;
   }
 `;
 
@@ -31,27 +33,11 @@ export const Slogan = styled.h1`
   -webkit-text-stroke: 1px black; /* width and color */
    color: transparent;
   @media only screen and (max-width: 768px) {
-    font-size:1.5em;
+    font-size:2em;
     margin-top:0px;
     width:80%;
   }
 `;
-
-export const Scroll = styled.div`
-  display:flex;
-  align-items:center;
-  width: 400px;
-  height: 20px;
-  overflow:hidden;
-  white-space:nowrap;
-  padding:2%;
-
-  @media only screen and (max-width: 768px) {
-    width:300px;
-    height:60px;
-  }
-`;
-
 
 export const Me = styled.a`
     font-size:0.9em;
@@ -110,6 +96,7 @@ export const About = styled.div`
   bottom:7%;
   display:flex;
   flex-direction:row;
+  animation: ${fadeInRigth} ease 0.4s forwards;
 
   @media only screen and (max-width: 768px) {
     display:none;
@@ -142,5 +129,12 @@ export const Data = styled.p`
   color:gray;
 `;
 
+export const Foot = styled.div`
+@media only screen and (max-width: 768px) {
+    height:200px;
+    width:100%;
+    position: relative;
+}
+`;
 
 

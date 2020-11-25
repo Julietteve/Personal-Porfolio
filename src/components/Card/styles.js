@@ -50,7 +50,6 @@ export const CardHolder = styled.div`
     margin:0;
     animation: ${fadeIn} ease-in-out 0.4s;
     
-  
     &:hover ${OverLayer}{
         opacity:1;
     }
@@ -59,7 +58,7 @@ export const CardHolder = styled.div`
     }
 
     @media only screen and (max-width: 768px) {
-        max-height:270px;
+        max-height:180px;
 }
 `;
 

@@ -144,6 +144,16 @@ export const Wrap = styled.div`
    align-items:center;
    width:80%;
    margin:5%;
+`;
+
+export const Foot = styled.div`
+@media only screen and (max-width: 768px) {
+    height:100px;
+    width:100%;
+    position: relative;
+    background-color:black;
+    color:white
+}
   
 `;
 
