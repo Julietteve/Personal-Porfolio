@@ -1,6 +1,5 @@
 import styled from 'styled-components/macro';
-import{scroll, fadeInRigth, float,} from '../../animations';
-
+import{fadeInRigth, float,} from '../../animations';
 
 export const Container = styled.div`
   width:100vw;
@@ -14,8 +13,6 @@ export const Container = styled.div`
   @media only screen and (max-width: 768px) {
     flex-direction:column;
   }
-  
-
 `;
 
 export const Slogan = styled.h1`
@@ -34,60 +31,31 @@ export const Slogan = styled.h1`
   -webkit-text-stroke: 1px black; /* width and color */
    color: transparent;
   @media only screen and (max-width: 768px) {
-    font-size:2em;
+    font-size:1.5em;
     margin-top:0px;
-  }
-`;
-
-export const Info = styled.div`
-  font-size:1em;
-  letter-spacing:0.3rem;
-  position: relative;
-  -webkit-animation: ${scroll} 20s infinite linear;;
-  -moz-animation: ${scroll} 20s infinite linear;
-  -o-animation: ${scroll} 20s infinite linear;
-  animation: ${scroll} 20s infinite linear;
-
-  @media only screen and (max-width: 768px) {
-    margin:2%;
+    width:80%;
   }
 `;
 
 export const Scroll = styled.div`
-display:flex;
-align-items:center;
- width: 400px;
+  display:flex;
+  align-items:center;
+  width: 400px;
   height: 20px;
   overflow:hidden;
   white-space:nowrap;
   padding:2%;
- 
- 
+
   @media only screen and (max-width: 768px) {
     width:300px;
     height:60px;
   }
 `;
 
-export const Circle = styled.img`
-  position: absolute;
-  top:10%;
-  left: 20%;
-  width:30%;
-  animation: ${fadeInRigth} ease 0.4s forwards;
-
-  @media only screen and (max-width: 768px) {
-    width:40%;
-    top:50%;
-    left: 60%;
-  }
-  
-`;
 
 export const Me = styled.a`
     font-size:0.9em;
     color:black;
-    text-decoration:none;
     text-transform:uppercase;
     letter-spacing:0.3rem;
     width:40%;
@@ -109,9 +77,8 @@ export const Me = styled.a`
   }
 
   @media only screen and (max-width: 768px) {
-    width:60%;
-    padding:4%;
-    margin-left:0px;
+    width:100%;
+    margin:30%;
     }
 `;
 
@@ -133,8 +100,8 @@ export const Artemisa = styled.img`
   animation: ${float} 6s ease-in-out infinite;
 
   @media only screen and (max-width: 768px) {
+    width:100%;
   }
-  
 `;
 
 export const About = styled.div`
@@ -143,6 +110,10 @@ export const About = styled.div`
   bottom:7%;
   display:flex;
   flex-direction:row;
+
+  @media only screen and (max-width: 768px) {
+    display:none;
+    }
 `;
 
 export const What = styled.div`
@@ -150,6 +121,10 @@ export const What = styled.div`
   flex-direction:column;
   text-align: left;
   margin-right:60px;
+
+  @media only screen and (max-width: 768px) {
+   text-align:center;
+    }
 `;
 
 export const Type = styled.div`

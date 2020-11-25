@@ -7,3 +7,4 @@ export {default as Card} from './Card';
 export {default as Error404} from './Error404';
 export {default as MobileNav} from './MobileNav';
 export {default as SideBar} from './SideBar';
+export {default as Footer} from './Footer';

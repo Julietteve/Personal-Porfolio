@@ -14,21 +14,9 @@ export const Container = styled.div`
     padding-right:7%;
 
     @media only screen and (max-width: 768px) {
-        display:none;
-  }
-`;
-
-export const About = styled.h1`
-    margin:6%;
-    font-size: 3rem;
-    word-wrap:break-word;
-    line-height:0.8;
-  text-align: center;
-  text-transform:uppercase;
-  animation: ${fadeIn} 2s ease;
-  -webkit-text-stroke: 1px white;
-   color: transparent;
-   line-height:1;
+        width:100%;
+        box-sizing:border-box;
+    }
 `;
 
 export const Info = styled.div`
@@ -38,6 +26,9 @@ export const Info = styled.div`
     font-size:13px;
     animation: ${fadeIn} 2s ease;
     letter-spacing:1px;
+    @media only screen and (max-width: 768px) {
+        text-align:right;
+  }
 `;
 
 export const Line = styled.div`
@@ -47,6 +38,11 @@ export const Line = styled.div`
     margin-right:auto; 
     margin-left:0;
     animation: ${fadeIn} 2s ease;
+
+    @media only screen and (max-width: 768px) {
+        width:60%;
+        margin-right:0;
+  }
 `;
 
 export const Love = styled.h1`
@@ -58,4 +54,10 @@ export const Love = styled.h1`
     margin-left:0;
     margin-bottom:16px;
     animation: ${fadeIn} 2s ease;
+    
+
+    @media only screen and (max-width: 768px) {
+     font-size:1.5rem;
+     text-align: center;
+  }
 `;

@@ -2,6 +2,7 @@ import React from 'react';
 import {About, Data, What, Type, Container, Info, Artemisa, Slogan, Box, Me, Scroll, Circle} from './styles';
 import {intro} from './data';
 import cv from "./Julieta-Garcia CV-2020.pdf";
+import {Footer} from '../../components'
 
 const Home = () => {    
 
@@ -22,9 +23,6 @@ const Home = () => {
                 </About>
                 <Artemisa src= "images/artemisa.png"></Artemisa>
                 <Slogan>Because the outside also matters.</Slogan>
-                {/* <Scroll>
-                    <Info>{intro}</Info>
-                </Scroll> */}
                 <Me 
                 target="_blank" 
                 rel="noopener noreferrer" 
@@ -32,7 +30,7 @@ const Home = () => {
                 download
                 >
                     Download CV   </Me>
-
+                <Footer/>
             </Box>
         </Container>
 

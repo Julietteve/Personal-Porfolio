@@ -69,11 +69,10 @@ export const IconLink = styled.a`
 `;
 
 export const NavIcon = styled(LinkIcon)`
-    font-size:2rem;
+    font-size:1.5rem;
     text-decoration: none;
-    text-transform:uppercase;
     color:white;
-    letter-spacing:0.7rem;
+    letter-spacing:0.2rem;
     margin:3%;
     transition: all .2s ease-in-out;
     animation: ${fadeInRigth} ease 0.4s forwards;

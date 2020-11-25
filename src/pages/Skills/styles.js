@@ -67,6 +67,16 @@ export const HoverLeft = styled.div`
 
 `;
 
+export const Foot = styled.div`
+   
+@media only screen and (max-width: 768px) {
+    height:100px;
+    width:100%;
+    position: relative;
+}
+  
+`;
+
 
 
 

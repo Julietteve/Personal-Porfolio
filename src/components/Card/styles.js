@@ -22,6 +22,10 @@ export const CodeContainer = styled.div`
   transform: translate(-50%, -50%);
   text-align: center;
   padding:3%;
+
+  @media only screen and (max-width: 768px) {
+    padding:1%;
+}
 `;
 
 export const Cover = styled.img`
@@ -29,14 +33,14 @@ export const Cover = styled.img`
     height:auto;
     transition: .5s ease;
     backface-visibility: hidden;
-    opacity:0.1;
+    opacity:0.5;
     display:block;
     filter: grayscale(20%)
 `;
 
 export const CardHolder = styled.div`
     width:calc(100%/2);
-    height:420px;
+    max-height:490px;
     position:relative;
     display:flex;
     flex-direction:column;
@@ -51,20 +55,21 @@ export const CardHolder = styled.div`
         opacity:1;
     }
     &:hover ${Cover}{
-        opacity:0.5;
+        opacity:0.1;
     }
 
-    
     @media only screen and (max-width: 768px) {
-        height:240px;
+        max-height:270px;
 }
 `;
 
 export const ProjectName = styled.p`
-    letter-spacing:0.2rem;
+    letter-spacing:0.1rem;
+    font-weight:bolder;
+    font-size:1rem;
 
     @media only screen and (max-width: 768px) {
-      font-size:1rem;
+      font-size:0.8rem;
 }
 `;
 export const SeeCode = styled.a`
@@ -74,21 +79,21 @@ export const SeeCode = styled.a`
     border-bottom: 1px white solid;
 
     @media only screen and (max-width: 768px) {
-      font-size:0.9rem;
+      font-size:0.8rem;
+      
 }
 `;
 
 export const CodeBox = styled.div`
     margin-top:15%;
     padding:2%;
-
 `;
 
 export const Tool = styled.div`
     font-size:0.9rem;
 
     @media only screen and (max-width: 768px) {
-      font-size:0.8rem;
+      font-size:0.7rem;
 }
 
 `;

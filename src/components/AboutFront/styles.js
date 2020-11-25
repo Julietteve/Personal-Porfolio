@@ -13,7 +13,8 @@ export const Container = styled.div`
 
     @media only screen and (max-width: 768px) {
         width:100%;
-  }
+        box-sizing:border-box;
+    }
 `;
 export const Quote = styled.div`
     color:white;
@@ -24,11 +25,6 @@ export const Quote = styled.div`
     letter-spacing:0.2rem;
     margin-right:0;
     font-size:1.5rem;
-
-    @media only screen and (max-width: 768px) {
-        font-size:1.3rem;
-        margin-top:20%;
-  }
 `;
 
 export const Author = styled.p`
@@ -56,10 +52,11 @@ export const ChangeButton = styled.button`
     :focus:hover{
         outline:none;
     }
+
     @media only screen and (max-width: 768px) {
         width:60%;
-        font-size: 0.9rem;
-  }
+        
+    }
 `;
 
 export const Button = styled.div`
@@ -69,9 +66,5 @@ export const Button = styled.div`
     margin-top:5%;
     margin-right:0;
     animation: ${fadeIn} 2s ease;
-
-    :hover{
-    text-decoration: underline;
-    }
 `;
 

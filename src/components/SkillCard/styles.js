@@ -56,6 +56,7 @@ export const FlipCardBack = styled.div`
 export const Animal = styled.img`
     width:100%;
     height:80%;
+    object-fit: cover;
 
 `;
 

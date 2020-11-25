@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {ContainerWork, Wrap, Img, Meme, Choose,ToolContainer, Button, Work,CardContainer,Filter} from './styles';
+import {ContainerWork, Scroll, Img, Meme, Choose,ToolContainer, Button, Work,CardContainer,Filter} from './styles';
 import {porfolio, tools} from './data';
 import {Card} from '../../components'
 
@@ -26,14 +26,8 @@ const Works = () => {
     return (
        <ContainerWork>
            <Filter>
-               <Wrap>
-               <Work>Work.</Work>
-               </Wrap>
-               <Choose> Filter by technology 
-               <Meme>
-                   <Img src="images/work.jpg"></Img>
-               </Meme>
-               </Choose>
+               <Choose> Filter by technology</Choose>>
+               <Scroll>scroll → </Scroll>
                <ToolContainer>
                { 
                     tools.map((tool, index)=>(

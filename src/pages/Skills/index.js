@@ -1,7 +1,7 @@
 import React from 'react';
-import {SkillCard} from '../../components';
+import {SkillCard, Footer} from '../../components';
 import {skills} from './data';
-import {Container, SkillsContainer,Skill, HoverLeft, HoverRight} from './styles'
+import {Container, SkillsContainer,Skill, HoverLeft, HoverRight, Foot} from './styles'
 
 const Skills = () => {
 
@@ -23,8 +23,11 @@ const Skills = () => {
                      />
                    ))
                  }
-                   </Skill>  
+                   </Skill>
                </SkillsContainer>
+                  <Foot>
+               <Footer></Footer>
+                  </Foot>
         </Container>
     );
 };
