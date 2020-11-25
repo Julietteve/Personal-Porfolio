@@ -13,7 +13,6 @@ export const Container = styled.div`
   @media only screen and (max-width: 768px) {
     padding-top:20%;
     flex-direction:column;
-    height:100%;
   }
 `;
 
@@ -92,8 +91,8 @@ export const Artemisa = styled.img`
 
 export const About = styled.div`
   position: absolute;
-  left:12%;
-  bottom:7%;
+  left:200px;
+  bottom: 50px;
   display:flex;
   flex-direction:row;
   animation: ${fadeInRigth} ease 0.4s forwards;
@@ -131,9 +130,10 @@ export const Data = styled.p`
 
 export const Foot = styled.div`
 @media only screen and (max-width: 768px) {
-    height:200px;
+    height:50px;
     width:100%;
     position: relative;
+    top:0;
 }
 `;
 

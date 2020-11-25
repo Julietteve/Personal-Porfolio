@@ -10,7 +10,7 @@ export const Container = styled.div`
 
 export const Foot = styled.div`
 @media only screen and (max-width: 768px) {
-    height:150px;
+    height:200px;
     width:100%;
     position: relative;
     background-color:black;

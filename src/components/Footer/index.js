@@ -4,6 +4,9 @@ import {Container, Contact, Info, DataType} from './styles'
 const Footer = () => {
     return (
         <Container>
+            <Contact>
+                <DataType> J G</DataType>
+            </Contact>
              <Contact>
                 <DataType>Contact</DataType>
                 <Info

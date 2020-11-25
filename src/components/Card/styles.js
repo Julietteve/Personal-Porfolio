@@ -55,7 +55,7 @@ export const CardHolder = styled.div`
     }
 
     @media only screen and (max-width: 768px) {
-        max-height:180px;
+        max-height:250px;
 }
 `;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Quote, ChangeButton, Button, Author, Love} from './styles';
+import {Container, Quote, ChangeButton, Button, Author} from './styles';
 
 const AboutFront = ({quote, onClick, author}) => {
     return (

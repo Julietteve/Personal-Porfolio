@@ -27,7 +27,9 @@ export const Info = styled.div`
     animation: ${fadeIn} 2s ease;
     letter-spacing:1px;
     @media only screen and (max-width: 768px) {
-        text-align:right;
+        text-align:left;
+        font-size:15px;
+        line-height: 2;
   }
 `;
 

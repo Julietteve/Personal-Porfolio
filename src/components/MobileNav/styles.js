@@ -20,7 +20,7 @@ export const Icon = styled.div`
     top:1.2rem;
     left:1.5rem;
     background: transparent;
-    font-size:3rem;
+    font-size:2rem;
     outline:none;
     cursor: pointer;
     color: ${(props)=>props.iconColor};
