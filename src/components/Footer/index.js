@@ -1,11 +1,11 @@
 import React from 'react';
-import {Container, Contact, Info, DataType} from './styles'
+import {Container, Contact, Info, DataType,Name} from './styles'
 
 const Footer = () => {
     return (
         <Container>
             <Contact>
-                <DataType> J G</DataType>
+                <Name>J G</Name>
             </Contact>
              <Contact>
                 <DataType>Contact</DataType>

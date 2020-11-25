@@ -27,6 +27,12 @@ export const DataType = styled.div`
     margin-top:5px;
 `;
 
+export const Name = styled.div`
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:1.2rem;
+`;
+
 export const Info = styled.a`
     text-decoration:none;
     color:gray;
