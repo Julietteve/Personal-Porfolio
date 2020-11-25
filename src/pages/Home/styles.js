@@ -92,7 +92,7 @@ export const Artemisa = styled.img`
 export const About = styled.div`
   position: absolute;
   left:200px;
-  bottom: 50px;
+  bottom: 40px;
   display:flex;
   flex-direction:row;
   animation: ${fadeInRigth} ease 0.4s forwards;
