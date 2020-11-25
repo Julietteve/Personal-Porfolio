@@ -12,7 +12,6 @@ export const OverLayer = styled.div`
   opacity: 0;
   transition: .5s ease;
 `;
-
 export const CodeContainer = styled.div`
    position: absolute;
   top: 50%;
@@ -27,7 +26,6 @@ export const CodeContainer = styled.div`
     padding:1%;
 }
 `;
-
 export const Cover = styled.img`
     width:100%;
     height:auto;
@@ -37,7 +35,6 @@ export const Cover = styled.img`
     display:block;
     filter: grayscale(20%)
 `;
-
 export const CardHolder = styled.div`
     width:calc(100%/2);
     max-height:490px;
@@ -82,12 +79,10 @@ export const SeeCode = styled.a`
       
 }
 `;
-
 export const CodeBox = styled.div`
     margin-top:15%;
     padding:2%;
 `;
-
 export const Tool = styled.div`
     font-size:0.9rem;
 
