@@ -10,14 +10,14 @@ export const porfolio = [
     {
         name: "Aaron Horkey's Universe",
         tools : [ "All", "HTML", "CSS", "JQuery"],
-        repo : "https://github.com/Julietteve/Aaron-Honkey-ArtPorfolio",
+        repo : "https://aaron-horkey-desktop.netlify.app/",
         image: "images/horkey.jpg"
     },
 
     {
         name: "Tiny People",
         tools : [ "All", "HTML", "CSS", "Sass", "Bootstrap"],
-        repo : "https://github.com/Julietteve/tiny-people",
+        repo : "https://tiny-people.netlify.app/",
         image: "images/tiny.jpg"
     },
 
@@ -30,13 +30,13 @@ export const porfolio = [
     {
         name: "The Booking Time",
         tools : [ "All", "HTML" , "CSS" , "Bootstrap" , "React JS", "MomentJS"],
-        repo : "https://github.com/Julietteve/The-Booking-Time",
+        repo : "https://the-booking-time.netlify.app/",
         image: "images/booking.jpg"
     },
     {
         name: "The Juglar Press",
         tools :[  "All", "Styled Components", "React JS", "React-Redux", "React-Router"],
-        repo : "https://github.com/Julietteve/The-Juglar-Press",
+        repo : "https://thejuglarpress.netlify.app/",
         image: "images/juglar.jpg"
     },
     {

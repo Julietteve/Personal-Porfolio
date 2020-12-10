@@ -15,7 +15,7 @@ const Card = ({name,tools,repo,image}) => {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 href={repo}>
-                    See the code
+                    Watch me here
                 </SeeCode>
                 </CodeBox>
            </CodeContainer>
