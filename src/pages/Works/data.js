@@ -51,6 +51,12 @@ export const porfolio = [
         repo : "https://github.com/Julietteve/Go-Go-Token",
         image: "images/token.jpg"
     },
+    {
+        name: "Mente En Calma",
+        tools : [ "All", "Styled Components", "React JS", "HTML"],
+        repo : "https://agostinafaccone.netlify.app/",
+        image: "images/mente.jpg"
+    },
 ]
 
 export const tools = [ "All", "HTML", "CSS", "Bootstrap", "Sass", "Laravel", "MySQL", "JQuery", "Vainilla JS", "React JS", "React-Redux", "Styled Components"];
