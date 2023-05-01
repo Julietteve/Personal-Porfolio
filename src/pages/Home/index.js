@@ -1,6 +1,6 @@
 import React from 'react';
 import {About, Data, What, Type, Container, Artemisa, Slogan, Box, Me, Foot} from './styles';
-import cv from "./Julieta Garcia CV 2020 EN.pdf";
+import cv from "./cv.pdf";
 import {Footer} from '../../components'
 
 const Home = () => {    
