@@ -1,7 +1,7 @@
 import React from 'react';
 import {About, Data, What, Type, Container, Artemisa, Slogan, Box, Me, Foot} from './styles';
 import {Footer} from '../../components'
-import cv from "./Julieta_Garcia_CV_2023.pdf";
+import cv from "./JULIETA_GARCIA_2023.pdf";
 
 const Home = () => {    
 
